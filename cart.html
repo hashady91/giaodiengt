@@ -1,0 +1,827 @@
+<html class="js hashchange history backgroundsize cssanimations cssgradients csstransforms csstransforms3d csstransitions generatedcontent video applicationcache no-csspositionsticky adownload boxsizing lastchild fullscreen formvalidation datauri flexbox" style=""><!--<![endif]--><head>
+    <title>My Cart</title>
+    <meta charset="utf-8">
+    <script>
+      BOOMR = {};
+      BOOMR["t_lstart"] = new Date().getTime();
+      var collectOnload = function(){
+        BOOMR["t_lonload"] = new Date().getTime();
+      }
+      var addListener = function(sType){
+        if(window.addEventListener) {
+          window.addEventListener(sType, collectOnload, false);
+        } else if(window.attachEvent){
+          window.attachEvent("on"+sType, collectOnload);
+        }
+      }
+      if("onpagehide" in window) {
+        addListener("pageshow");
+      } else {
+        addListener("load");
+      }
+    
+      var applicationConfig =
+        
+    {}
+;
+    </script>
+    <script>
+      window.Groupon || (window.Groupon = {});
+      Groupon.division = {"timezone":"Central Time (US &amp; Canada)","lng":-87.6243,"country":"USA","defaultLocale":"en","timezoneIdentifier":"America/Chicago","state":{"abbreviation":"IL"},"id":"chicago","name":"Chicago","areas":[],"lat":41.8795,"selectCurrentDivision":"selected"};
+      Groupon.Layout = {};
+      Groupon.Performance = {};
+      Groupon.Performance.boomerangUrl = "//www.groupon.com/layout/assets/boomerang-0.9.3-basic.js";
+      Groupon.Layout.reserveEnabledDivision = true;
+      Groupon.CartTranslations = {"cart":{"cart":"Cart","desc":"Your Cart","quantity":"Qty","price":"Price","subtotal":"Subtotal","view_cart":"View Cart","empty_cart":"Your Shopping Cart is Empty!","empty_text":"Time to fill this bad boy with great products like gadgets, electronics, housewares, gifts and other great offerings from","groupon_goods":"Groupon Goods"}}
+      Groupon.endpoints = {};
+      Groupon.endpoints.deals = "//api.groupon.com/v2/deals/autocomplete?client_id=191c12944d06901822006221e6c44db67ed61803";
+      Groupon.endpoints.locations = "//api.groupon.com/v2/locations/autocomplete?client_id=191c12944d06901822006221e6c44db67ed61803";
+    </script>
+      <script>
+        var Optimize = {
+          suiteData: {
+            app:          "cart-summary",
+            cookieDomain: ".groupon.com",
+            pageType:     "cart/summary",
+            division:     "chicago",
+            country:      "US",
+            channel:      "" || "main"
+          }
+        };
+    
+        Optimize.clientConfig =
+          
+      {}
+;
+      </script>
+    <script>
+      Optimize.finchConfig = (function () {
+        var appConfig =
+            {"mygroupons":{"experiments":{"FirstComeFirstServeSocialGifting":{"name":"FirstComeFirstServeSocialGifting","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":true,"variants":["gifting"],"environments":[{"name":"main-js"}],"control":"gifting"}},"diversion_type":"CookieDiversion"},"api-mobile-all-switcheroo":{"experiments":{"switcheroo":{"name":"switcheroo","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["on","on","on","on","on","on","on","on","on","on"],"environments":[{"name":"api-mobile-all"},{"name":"main-api"}],"control":"on"}},"diversion_type":"CookieDiversion"},"api-mobile-all-dealdetails":{"experiments":{"dealDetails":{"name":"dealDetails","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["new","new","new","new","new","new","new","new","new","new"],"environments":[{"name":"api-mobile-all"},{"name":"main-api"}],"control":"new"}},"diversion_type":"CookieDiversion"},"api-mobile-all-postpurchasedeals":{"experiments":{"postPurchaseDeals":{"name":"postPurchaseDeals","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["on","on"],"environments":[{"name":"api-mobile-all"},{"name":"main-api"}],"control":"on"}},"diversion_type":"CookieDiversion"},"scheduler-book-online-text":{"experiments":{"ShowBookOnlineText":{"name":"ShowBookOnlineText","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":true,"variants":["Display"],"guards":[{"name":"on_deal_or_division_page","parameters":null},{"name":"scheduler_deal","parameters":null}],"environments":[{"name":"main-js"}],"control":"Display"}},"diversion_type":"CookieDiversion"},"performance-rollout":{"experiments":{"BoomerangMonitoring":{"name":"BoomerangMonitoring","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":true,"variants":["Boomerang"],"environments":[{"name":"main-js"}],"control":"Boomerang"}},"diversion_type":"RandomDiversion"},"unsubscribe-flow":{"experiments":{"NewModals":{"name":"NewModals","status":"running","buckets":"0..899","bucket_min":0,"bucket_max":899,"tracking":true,"browser":true,"javascript_test":true,"variants":["Feedback"],"guards":[{"name":"on_sub_center_with_division","parameters":null}],"environments":[{"name":"main-js"}],"control":"Feedback"},"NewModals2":{"name":"NewModals2","status":"running","buckets":"900..999","bucket_min":900,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":true,"variants":["Feedback"],"guards":[{"name":"on_sub_center_with_division","parameters":null}],"environments":[{"name":"main-js"}],"control":"Feedback"}},"diversion_type":"CookieDiversion"},"now-occurrences":{"experiments":{"Occurrences":{"name":"Occurrences","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":true,"variants":["Standard"],"guards":[{"name":"on_now_page","parameters":null}],"environments":[{"name":"main-js"}],"control":"Standard"}},"diversion_type":"CookieDiversion"},"api-mobile-all-goods1205":{"experiments":{"goods1205":{"name":"goods1205","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["largeDealCards","largeDealCards","largeDealCards","largeDealCards","largeDealCards","largeDealCards","largeDealCards","largeDealCards","largeDealCards","largeDealCards"],"environments":[{"name":"api-mobile-all"},{"name":"main-api"}],"control":"largeDealCards"}},"diversion_type":"CookieDiversion"},"api-mobile-all-featureddeals1205":{"experiments":{"featuredDeals1205":{"name":"featuredDeals1205","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["largeDealCards","largeDealCards","largeDealCards","largeDealCards","largeDealCards","largeDealCards","largeDealCards","largeDealCards"],"environments":[{"name":"api-mobile-all"},{"name":"main-api"}],"control":"largeDealCards"}},"diversion_type":"CookieDiversion"},"api-mobile-all-nearbydealdetails1205":{"experiments":{"nearbyDealDetails1205":{"name":"nearbyDealDetails1205","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["new","new","new","new","new","new","new","new","new","new"],"environments":[{"name":"api-mobile-all"},{"name":"main-api"}],"control":"new"}},"diversion_type":"CookieDiversion"},"api-mobile-all-nearby1205":{"experiments":{"nearby1205":{"name":"nearby1205","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":false,"variants":["Original","titleOnly","Original","Original","Original","Original","Original","Original","Original","Original"],"environments":[{"name":"api-mobile-all"},{"name":"main-api"}],"control":"Original"}},"diversion_type":"CookieDiversion"},"api-mobile-all-carousel1205":{"experiments":{"carousel1205":{"name":"carousel1205","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["on","on","on","on","on","on","on","on","on","on"],"environments":[{"name":"api-mobile-all"},{"name":"main-api"}],"control":"on"}},"diversion_type":"CookieDiversion"},"api-mobile-all-getaways1205":{"experiments":{"getaways1205":{"name":"getaways1205","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["largeDealCards","largeDealCards"],"environments":[{"name":"api-mobile-all"},{"name":"main-api"}],"control":"largeDealCards"}},"diversion_type":"CookieDiversion"},"now-search-service":{"experiments":{"NowRelevanceSwitch":{"name":"NowRelevanceSwitch","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":true,"variants":["Original","RelevanceService"],"guards":[{"name":"division_is_enabled_for_now","parameters":null}],"environments":[{"name":"main-js"}],"control":"Original"}},"diversion_type":"CookieDiversion"},"api-mobile-all-zerodaydeals":{"experiments":{"zeroDayDeals":{"name":"zeroDayDeals","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":false,"variants":["on","on","on","on","on","on","on","on","on","on"],"environments":[{"name":"api-mobile-all"},{"name":"main-api"}],"control":"on"}},"diversion_type":"CookieDiversion"},"transaction-succeeded-email":{"experiments":{"EmailsWithRankedDeals":{"name":"EmailsWithRankedDeals","status":"running","buckets":"0..99","bucket_min":0,"bucket_max":99,"tracking":true,"browser":true,"javascript_test":false,"variants":["Control","WithRankedDeals"],"environments":[{"name":"main-backend"}],"control":"Control"}},"diversion_type":"CookieDiversion"},"api-mobile-all-onboarding1207":{"experiments":{"onboarding1207":{"name":"onboarding1207","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":false,"variants":["Original","msemail","ssemail","msemail","ssemail"],"environments":[{"name":"api-mobile-all"},{"name":"main-api"}],"control":"Original"}},"diversion_type":"CookieDiversion"},"api-mobile-all-dealdetailprice1207":{"experiments":{"dealDetailPrice1207":{"name":"dealDetailPrice1207","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["on","on"],"environments":[{"name":"api-mobile-all"},{"name":"main-api"}],"control":"on"}},"diversion_type":"CookieDiversion"},"api-mobile-all-dealdetailabout1207":{"experiments":{"dealDetailAbout1207":{"name":"dealDetailAbout1207","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["on","on"],"environments":[{"name":"api-mobile-all"},{"name":"main-api"}],"control":"on"}},"diversion_type":"CookieDiversion"},"unsubscribe-channel-flow":{"experiments":{"ChannelNewModals":{"name":"ChannelNewModals","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":true,"variants":["ChannelFeedback"],"guards":[{"name":"on_sub_center_with_channel","parameters":null}],"environments":[{"name":"main-js"}],"control":"ChannelFeedback"}},"diversion_type":"CookieDiversion"},"OptionsWidget":{"experiments":{"OptionsWidgetVariations":{"name":"OptionsWidgetVariations","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":true,"variants":["OptionsWidget"],"guards":[{"name":"on_goods_deal","parameters":null}],"environments":[{"name":"main-js"}],"control":"OptionsWidget"}},"diversion_type":"CookieDiversion"},"performance-boomerang":{"experiments":{"BoomerangDNS":{"name":"BoomerangDNS","status":"running","buckets":"0..9","bucket_min":0,"bucket_max":9,"tracking":true,"browser":true,"javascript_test":true,"variants":["Control","Enable_dns"],"environments":[{"name":"main-js"}],"control":"Control"},"BoomerangBW":{"name":"BoomerangBW","status":"running","buckets":"800..809","bucket_min":800,"bucket_max":809,"tracking":true,"browser":true,"javascript_test":true,"variants":["Control","Enable_bandwidth"],"environments":[{"name":"main-js"}],"control":"Control"}},"diversion_type":"RandomDiversion"},"local-header":{"experiments":{"ShowCategoriesOnDealPages":{"name":"ShowCategoriesOnDealPages","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":true,"variants":["ShowCategories"],"guards":[{"name":"inBrowseExperiment","parameters":null},{"name":"isEligibleForCategoryNav","parameters":null},{"name":"onBrowseOrDealPages","parameters":null}],"environments":[{"name":"main-js"}],"control":"ShowCategories"}},"diversion_type":"CookieDiversion"},"api-mobile-all-fbpermissions1209":{"experiments":{"fbPermissions1209":{"name":"fbPermissions1209","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["on","on"],"environments":[{"name":"api-mobile-all"},{"name":"main-api"}],"control":"on"}},"diversion_type":"CookieDiversion"},"api-mobile-all-getawayscontent1209":{"experiments":{"getawaysContent1209":{"name":"getawaysContent1209","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["on","on"],"environments":[{"name":"api-mobile-all"},{"name":"main-api"}],"control":"on"}},"diversion_type":"CookieDiversion"},"api-mobile-all-notificationsbadge1209":{"experiments":{"notificationsBadge1209":{"name":"notificationsBadge1209","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":false,"variants":["Original","on"],"environments":[{"name":"api-mobile-all"},{"name":"main-api"}],"control":"Original"}},"diversion_type":"CookieDiversion"},"api-mobile-all-goodsvariations1209":{"experiments":{"goodsVariations1209":{"name":"goodsVariations1209","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["Original","Original","Original","Original","Original"],"environments":[{"name":"api-mobile-all"},{"name":"main-api"}],"control":"Original"}},"diversion_type":"CookieDiversion"},"api-mobile-all-signup1209":{"experiments":{"signup1209":{"name":"signup1209","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["Original"],"environments":[{"name":"api-mobile-all"},{"name":"main-api"}],"control":"Original"}},"diversion_type":"CookieDiversion"},"new-header-and-all-deals-vs-browse":{"experiments":{"LocalNavHeaderWithBrowseLink":{"name":"LocalNavHeaderWithBrowseLink","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":true,"variants":["LocalNavWithBrowseLink"],"guards":[{"name":"division_enabled_for_browse","parameters":null}],"environments":[{"name":"main-js"}],"control":"LocalNavWithBrowseLink"}},"diversion_type":"CookieDiversion"},"sanity-check":{"experiments":{"SanityCheck":{"name":"SanityCheck","status":"running","buckets":"0..19","bucket_min":0,"bucket_max":19,"tracking":true,"browser":true,"javascript_test":true,"variants":["SanityCheck"],"environments":[{"name":"main-js"}],"control":"SanityCheck"}},"diversion_type":"CookieDiversion"},"api-mobile-all-nearbydivisions1209":{"experiments":{"nearbyDivisions1209":{"name":"nearbyDivisions1209","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["all","all","all"],"environments":[{"name":"main-api"}],"control":"all"}},"diversion_type":"CookieDiversion"},"LimitedDeals":{"experiments":{"LimitedDeals":{"name":"LimitedDeals","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["LimitedDealsVariant"],"environments":[{"name":"main-backend"}],"control":"LimitedDealsVariant"}},"diversion_type":"CookieDiversion"},"browse-as-home-page":{"experiments":{"BrowseAsHomePage":{"name":"BrowseAsHomePage","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":true,"variants":["RedirectToBrowse"],"guards":[{"name":"onDivisionPage","parameters":null},{"name":"inBrowseExperiment","parameters":null}],"environments":[{"name":"main-js"}],"control":"RedirectToBrowse"}},"diversion_type":"CookieDiversion"},"new-goods-channel-page":{"experiments":{"GoodsChannelPage":{"name":"GoodsChannelPage","status":"running","buckets":"0..199","bucket_min":0,"bucket_max":199,"tracking":true,"browser":true,"javascript_test":false,"variants":["New","Original"],"environments":[{"name":"main-backend"}],"control":"Original"}},"diversion_type":"CookieDiversion"},"new-goods-detail-page":{"experiments":{"GoodsDetailPage":{"name":"GoodsDetailPage","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["New"],"environments":[{"name":"main-backend"}],"control":"New"}},"diversion_type":"CookieDiversion"},"goods-expedited-shipping":{"experiments":{"ExpeditedShipping":{"name":"ExpeditedShipping","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["ShowExpeditedShipping"],"guards":[{"name":"on_goods_expedited_shipping_deal_confirmation_or_edit_order_page?","parameters":null}],"environments":[{"name":"main-backend"}],"control":"ShowExpeditedShipping"}},"diversion_type":"CookieDiversion"},"api-mobile-all-bigImages1209":{"experiments":{"bigImages1209":{"name":"bigImages1209","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["on","on","on","on","on","on","on","on","on","on"],"environments":[{"name":"api-mobile-all"},{"name":"main-api"}],"control":"on"}},"diversion_type":"CookieDiversion"},"api-mobile-all-iaftray1211":{"experiments":{"iafTray1211":{"name":"iafTray1211","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["on"],"environments":[{"name":"main-api"}],"control":"on"}},"diversion_type":"CookieDiversion"},"GiftingDealMixerWeighting":{"experiments":{"GiftingDealMixerWeighting":{"name":"GiftingDealMixerWeighting","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":false,"variants":["NoWeighting","Strategy_3","Strategy_3","Strategy_3","Strategy_3","Strategy_3","Strategy_3","Strategy_3","Strategy_3","Strategy_3","Strategy_3","Strategy_3","Strategy_3","Strategy_3","Strategy_3","Strategy_3","Strategy_3","Strategy_3","Strategy_3","Strategy_3"],"environments":[{"name":"main-backend"}],"control":"NoWeighting"}},"diversion_type":"CookieDiversion"},"api-mobile-android-nearbycard1209":{"experiments":{"nearbyCard1209":{"name":"nearbyCard1209","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["LargeCard"],"environments":[{"name":"main-api"}],"control":"LargeCard"}},"diversion_type":"CookieDiversion"},"api-mobile-iphone-nearbycard1209":{"experiments":{"nearbyCard1209":{"name":"nearbyCard1209","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["BigCard"],"environments":[{"name":"main-api"}],"control":"BigCard"}},"diversion_type":"CookieDiversion"},"api-mobile-all-cardScan1211":{"experiments":{"cardScan1211":{"name":"cardScan1211","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["on","on"],"environments":[{"name":"main-api"}],"control":"on"}},"diversion_type":"CookieDiversion"},"api-mobile-all-loginScreen1211":{"experiments":{"loginScreen1211":{"name":"loginScreen1211","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":false,"variants":["Original","Original","Original","Original"],"environments":[{"name":"main-api"}],"control":"Original"}},"diversion_type":"CookieDiversion"},"api-mobile-all-onboarding1211":{"experiments":{"onboarding1211":{"name":"onboarding1211","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["twoStep","twoStep"],"environments":[{"name":"main-api"}],"control":"twoStep"}},"diversion_type":"CookieDiversion"},"InteractionTier":{"experiments":{"RedirectSubscriptionFlowToItier":{"name":"RedirectSubscriptionFlowToItier","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["itier"],"guards":[{"name":"finch_not_touch_request?","parameters":null}],"environments":[{"name":"main-backend"}],"control":"itier"}},"diversion_type":"CookieDiversion"},"keyword-bar-autocomplete":{"experiments":{"KeywordBarAutocomplete":{"name":"KeywordBarAutocomplete","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":true,"variants":["Autocomplete","Autocomplete","Autocomplete","Autocomplete","Autocomplete","Autocomplete","Autocomplete","Autocomplete","Autocomplete"],"guards":[{"name":"inBrowseExperiment","parameters":null},{"name":"onBrowseOrDealPages","parameters":null}],"environments":[{"name":"main-js"}],"control":"Autocomplete"}},"diversion_type":"CookieDiversion"},"location-bar-autocomplete":{"experiments":{"LocationBarAutocomplete":{"name":"LocationBarAutocomplete","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":true,"variants":["Autocomplete","Autocomplete","Autocomplete","Autocomplete","Autocomplete","Autocomplete","Autocomplete","Autocomplete","Autocomplete"],"guards":[{"name":"inBrowseExperiment","parameters":null},{"name":"onBrowseOrDealPages","parameters":null}],"environments":[{"name":"main-js"}],"control":"Autocomplete"}},"diversion_type":"CookieDiversion"},"gift-wizard":{"experiments":{"GiftWizard":{"name":"GiftWizard","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":true,"variants":["TwoUpScheduledDelivery","TwoUpScheduledDelivery","TwoUpScheduledDelivery","TwoUpScheduledDelivery","TwoUpScheduledDelivery","TwoUpScheduledDelivery","TwoUpScheduledDelivery","TwoUpScheduledDelivery","TwoUpScheduledDelivery","TwoUpScheduledDelivery","TwoUpScheduledDelivery","TwoUpScheduledDelivery","TwoUpScheduledDelivery","TwoUpScheduledDelivery","TwoUpScheduledDelivery","TwoUpScheduledDelivery","TwoUpScheduledDelivery","TwoUpScheduledDelivery","TwoUpScheduledDelivery","TwoUpScheduledDelivery"],"guards":[{"name":"on_checkout_or_edit_confirmation_page","parameters":null},{"name":"not_on_ie8","parameters":null},{"name":"not_on_ie7","parameters":null}],"environments":[{"name":"main-js"}],"control":"TwoUpScheduledDelivery"}},"diversion_type":"CookieDiversion"},"api-mobile-iphone-subcategories1211":{"experiments":{"subcategories1211":{"name":"subcategories1211","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["on"],"environments":[{"name":"main-api"}],"control":"on"}},"diversion_type":"CookieDiversion"},"api-mobile-android-subcategories1211":{"experiments":{"subcategories1211":{"name":"subcategories1211","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["Original","Original"],"environments":[{"name":"main-api"}],"control":"Original"}},"diversion_type":"CookieDiversion"},"api-mobile-all-nearbyfreetextsearch1212":{"experiments":{"nearbyFreeTextSearch1212":{"name":"nearbyFreeTextSearch1212","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["Original","Original","Original","Original","Original","Original","Original","Original","Original","Original"],"environments":[{"name":"main-api"}],"control":"Original"}},"diversion_type":"CookieDiversion"},"api-mobile-all-nearbyautocompletetext1212":{"experiments":{"nearbyAutocompleteText1212":{"name":"nearbyAutocompleteText1212","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["on","on"],"environments":[{"name":"main-api"}],"control":"on"}},"diversion_type":"CookieDiversion"},"local-header-variants":{"experiments":{"CategoryNavVariants":{"name":"CategoryNavVariants","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":true,"variants":["ShowCategoriesAndNewDeals"],"guards":[{"name":"inBrowseExperiment","parameters":null}],"environments":[{"name":"main-js"}],"control":"ShowCategoriesAndNewDeals"}},"diversion_type":"CookieDiversion"},"api-mobile-all-personalCollections1212":{"experiments":{"personalCollections1212":{"name":"personalCollections1212","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":false,"variants":["original","on","on","on","on","on","on","on","on","on"],"environments":[{"name":"main-api"}],"control":"original"}},"diversion_type":"CookieDiversion"},"api-mobile-android-checkout1209":{"experiments":{"checkout1209":{"name":"checkout1209","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":false,"variants":["v4","v4"],"environments":[{"name":"api-mobile-all"},{"name":"main-api"}],"control":"v4"}},"diversion_type":"CookieDiversion"},"api-mobile-iphone-checkout1209":{"experiments":{"checkout1209":{"name":"checkout1209","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":false,"variants":["v5","v5"],"environments":[{"name":"api-mobile-all"},{"name":"main-api"}],"control":"v5"}},"diversion_type":"CookieDiversion"},"giftable-occasions-pull-ads-position":{"experiments":{"GiftableOccasionsPullAdsPosition":{"name":"GiftableOccasionsPullAdsPosition","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["ShowAfterGiftFinder"],"guards":[{"name":"on_brwose_enabled_division?","parameters":null},{"name":"on_giftable_occasions_page?","parameters":null}],"environments":[{"name":"main-backend"}],"control":"ShowAfterGiftFinder"}},"diversion_type":"CookieDiversion"},"api-mobile-all-nearbydealsearch":{"experiments":{"nearbyDealSearch1209":{"name":"nearbyDealSearch1209","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["on","on"],"environments":[{"name":"main-api"}],"control":"on"}},"diversion_type":"CookieDiversion"},"GsmEmailSubscription":{"experiments":{"GsmEmailSubscriptionExperiment":{"name":"GsmEmailSubscriptionExperiment","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":true,"variants":["control","subModalContinue","subModal3Continue","subModal3ContinueSocial"],"guards":[{"name":"on_gsm_platform_page","parameters":null},{"name":"user_has_no_sub_cookie","parameters":null},{"name":"request_from_normal_seo","parameters":null},{"name":"not_explicitly_skip_modal","parameters":null}],"environments":[{"name":"main-js"}],"control":"control"}},"diversion_type":"CookieDiversion"},"touch-link-to-app-android":{"experiments":{"link-to-app-android":{"name":"link-to-app-android","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["RedirectToNativeApp","RedirectToNativeApp","RedirectToNativeApp","RedirectToNativeApp","RedirectToNativeApp","RedirectToNativeApp","RedirectToNativeApp","RedirectToNativeApp","RedirectToNativeApp","Control"],"guards":[{"name":"include_link_to_app?","parameters":null},{"name":"is_us_platform?","parameters":null},{"name":"is_android_without_blacklisted_devices?","parameters":null},{"name":"email_deal_info_request_us?","parameters":null}],"environments":[{"name":"touch-intl"}],"control":"Control"}},"diversion_type":"CookieDiversion"},"api-mobile-ipad-cardScan1211":{"experiments":{"cardScan1211":{"name":"cardScan1211","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["Original"],"environments":[{"name":"api-mobile-all"},{"name":"main-api"}],"control":"Original"}},"diversion_type":"CookieDiversion"},"GiftFinderOnGiftableOccasions":{"experiments":{"GiftFinderOnGiftableOccasions":{"name":"GiftFinderOnGiftableOccasions","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":true,"variants":["GiftableOccasions"],"guards":[{"name":"on_giftable_occasions_page","parameters":null}],"environments":[{"name":"main-js"}],"control":"GiftableOccasions"}},"diversion_type":"CookieDiversion"},"GiftFinderOnGifts":{"experiments":{"GiftFinderOnGifts":{"name":"GiftFinderOnGifts","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":true,"variants":["Control"],"guards":[{"name":"on_gifts_page","parameters":null}],"environments":[{"name":"main-js"}],"control":"Control"}},"diversion_type":"CookieDiversion"},"goods-page-browse":{"experiments":{"GoodsWithBrowseLayout":{"name":"GoodsWithBrowseLayout","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["ShowBrowseLayout"],"guards":[{"name":"on_goods_channel_or_dealpage?","parameters":null}],"environments":[{"name":"main-backend"}],"control":"ShowBrowseLayout"}},"diversion_type":"CookieDiversion"},"api-mobile-all-globalsearch1301usca":{"experiments":{"globalSearch1301USCA":{"name":"globalSearch1301USCA","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["on","on","on","on","on","on","on","on","on","on"],"environments":[{"name":"main-api"}],"control":"on"}},"diversion_type":"CookieDiversion"},"api-mobile-android-searchdealcard1301usca":{"experiments":{"searchDealCard1301USCA":{"name":"searchDealCard1301USCA","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["BigCard"],"environments":[{"name":"main-api"}],"control":"BigCard"}},"diversion_type":"CookieDiversion"},"api-mobile-all-searchautocompletelocation1301usca":{"experiments":{"searchAutocompleteLocation1301USCA":{"name":"searchAutocompleteLocation1301USCA","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["on","on"],"environments":[{"name":"main-api"}],"control":"on"}},"diversion_type":"CookieDiversion"},"api-mobile-all-searchautocompletetext1301usca":{"experiments":{"searchAutocompleteText1301USCA":{"name":"searchAutocompleteText1301USCA","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["on","on"],"environments":[{"name":"main-api"}],"control":"on"}},"diversion_type":"CookieDiversion"},"api-mobile-iphone-pullsearchonfeature1301usca":{"experiments":{"pullSearchOnFeature1301USCA":{"name":"pullSearchOnFeature1301USCA","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["Original","Original"],"environments":[{"name":"main-api"}],"control":"Original"}},"diversion_type":"CookieDiversion"},"api-mobile-all-IHQ1302ITFRPLNLPT":{"experiments":{"IHQ1302ITFRPLNLPT":{"name":"IHQ1302ITFRPLNLPT","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":false,"variants":["on","on","on","on","on"],"environments":[{"name":"main-api"}],"control":"on"}},"diversion_type":"CookieDiversion"},"api-mobile-android-clientNotification1301":{"experiments":{"clientNotification1301":{"name":"clientNotification1301","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["on"],"environments":[{"name":"api-mobile-all"},{"name":"main-api"}],"control":"on"}},"diversion_type":"CookieDiversion"},"GsmDispalyAdsWithSubModal":{"experiments":{"GsmDispalyAdsWithSubModalExperiment":{"name":"GsmDispalyAdsWithSubModalExperiment","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":true,"variants":["subModal"],"guards":[{"name":"on_gsm_platform_page","parameters":null},{"name":"request_from_display_ads","parameters":null},{"name":"user_has_no_sub_cookie","parameters":null},{"name":"user_has_no_hide_sub_cookie","parameters":null},{"name":"not_explicitly_skip_modal","parameters":null}],"environments":[{"name":"main-js"}],"control":"subModal"}},"diversion_type":"CookieDiversion"},"goods-gift-message":{"experiments":{"GiftMessage":{"name":"GiftMessage","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":true,"variants":["GiftMessage"],"guards":[{"name":"onGoodsCheckoutOrDealPages","parameters":null}],"environments":[{"name":"main-js"}],"control":"GiftMessage"}},"diversion_type":"CookieDiversion"},"browse-goods-layout":{"experiments":{"DealCardLayout":{"name":"DealCardLayout","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":true,"variants":["TwoUp"],"guards":[{"name":"onBrowseGoodsPage","parameters":null}],"environments":[{"name":"main-js"}],"control":"TwoUp"}},"diversion_type":"CookieDiversion"},"api-mobile-android-goodsCategories1301USCA":{"experiments":{"goodsCategories1301USCA":{"name":"goodsCategories1301USCA","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":false,"variants":["Original","Original","Original","Original","Original"],"environments":[{"name":"main-api"}],"control":"Original"}},"diversion_type":"CookieDiversion"},"html-gift-voucher":{"experiments":{"HtmlGiftVoucher":{"name":"HtmlGiftVoucher","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["UseHtmlVoucher"],"guards":[{"name":"not_ie6_request","parameters":null},{"name":"not_live_deal?","parameters":null}],"environments":[{"name":"main-backend"}],"control":"UseHtmlVoucher"}},"diversion_type":"CookieDiversion"},"touch-dealdetailspage0605US":{"experiments":{"touch-GoodsVariations0509US":{"name":"touch-GoodsVariations0509US","status":"running","buckets":"0..199","bucket_min":0,"bucket_max":199,"tracking":true,"browser":true,"javascript_test":false,"variants":["variations","Control"],"guards":[{"name":"is_us_platform?","parameters":null}],"environments":[{"name":"touch-intl"}],"control":"Control"}},"diversion_type":"CookieDiversion"},"MobileLandingPage":{"experiments":{"MobileLandingPageExp":{"name":"MobileLandingPageExp","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["newDesign"],"environments":[{"name":"main-backend"}],"control":"newDesign"}},"diversion_type":"CookieDiversion"},"api-mobile-iphone-globalSearchUpdate1302USCA":{"experiments":{"globalSearchUpdate1302USCA":{"name":"globalSearchUpdate1302USCA","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["v2","v2","v2","v2","v2","v2","v2","v2","v2","v2"],"environments":[{"name":"main-api"}],"control":"v2"}},"diversion_type":"CookieDiversion"},"api-mobile-all-showDealsOnNRP1303USCA":{"experiments":{"showDealsOnNRP1303USCA":{"name":"showDealsOnNRP1303USCA","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["on","on"],"environments":[{"name":"main-api"}],"control":"on"}},"diversion_type":"CookieDiversion"},"api-mobile-all-syncFeaturedAndPush":{"experiments":{"syncFeaturedAndPush":{"name":"syncFeaturedAndPush","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["on","on"],"environments":[{"name":"main-api"}],"control":"on"}},"diversion_type":"CookieDiversion"},"api-mobile-all-showSortByDistance1303USCA":{"experiments":{"showSortByDistance1303USCA":{"name":"showSortByDistance1303USCA","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["on","on"],"environments":[{"name":"main-api"}],"control":"on"}},"diversion_type":"CookieDiversion"},"GsmSemAdsWithSubModal":{"experiments":{"GsmSemAdsWithSubModalExperiment":{"name":"GsmSemAdsWithSubModalExperiment","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":true,"variants":["subModal","subModal","subModal","subModal","subModal","subModal","subModal","subModal","subModal","subModal5"],"guards":[{"name":"on_gsm_platform_page","parameters":null},{"name":"request_from_sem_ads","parameters":null},{"name":"user_has_no_sub_cookie","parameters":null},{"name":"not_explicitly_skip_modal","parameters":null}],"environments":[{"name":"main-js"}],"control":"subModal"}},"diversion_type":"CookieDiversion"},"api-mobile-all-goodsCategoryiPhoneUSCA1303":{"experiments":{"goodsCategoryiPhoneUSCA1303":{"name":"goodsCategoryiPhoneUSCA1303","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":false,"variants":["Original","Original","Original","Original","Original","Original","Original","Original","Original","Original","Original","Original","Original","Original","Original","Original","Original","Original","Original","Original"],"guards":[{"name":"not_iphone_2_6?","parameters":null}],"environments":[{"name":"main-api"}],"control":"Original"}},"diversion_type":"CookieDiversion"},"api-mobile-all-heartXOnboardingUSCA1303":{"experiments":{"heartXOnboardingUSCA1303":{"name":"heartXOnboardingUSCA1303","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["on","on","on","on"],"environments":[{"name":"main-api"}],"control":"on"}},"diversion_type":"CookieDiversion"},"api-mobile-all-onboardingRefreshUS1303":{"experiments":{"onboardingRefreshUS1303":{"name":"onboardingRefreshUS1303","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["on","on","on","on"],"environments":[{"name":"main-api"}],"control":"on"}},"diversion_type":"CookieDiversion"},"WeeklyUnsubscribe":{"experiments":{"WeeklyUnsubscribe":{"name":"WeeklyUnsubscribe","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["WeeklyUnsubscribe","WeeklyUnsubscribe","WeeklyUnsubscribe","WeeklyUnsubscribe","WeeklyUnsubscribe","WeeklyUnsubscribe","WeeklyUnsubscribe","WeeklyUnsubscribe","WeeklyUnsubscribe","WeeklyUnsubscribe","WeeklyUnsubscribe","WeeklyUnsubscribe","WeeklyUnsubscribe","WeeklyUnsubscribe","WeeklyUnsubscribe","WeeklyUnsubscribe","WeeklyUnsubscribe","WeeklyUnsubscribe","WeeklyUnsubscribe","WeeklyUnsubscribe"],"guards":[{"name":"sub_center_with_channel_unsub?","parameters":null}],"environments":[{"name":"main-backend"}],"control":"WeeklyUnsubscribe"}},"diversion_type":"CookieDiversion"},"hide-reserve-tab":{"experiments":{"HideReserveTabForUsers":{"name":"HideReserveTabForUsers","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":true,"variants":["ShowReserveTab"],"guards":[{"name":"division_enabled_for_reserve","parameters":null},{"name":"not_subscription_page","parameters":null}],"environments":[{"name":"main-js"}],"control":"ShowReserveTab"}},"diversion_type":"CookieDiversion"},"api-mobile-all-removeMXFromCountrySelector1305":{"experiments":{"removeMXFromCountrySelector1305":{"name":"removeMXFromCountrySelector1305","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["Original"],"environments":[{"name":"api-mobile-all"},{"name":"main-api"}],"control":"Original"}},"diversion_type":"CookieDiversion"},"CategoriesOnDealPages":{"experiments":{"CategoriesOnGoodsDealPages":{"name":"CategoriesOnGoodsDealPages","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":true,"variants":["ShowCategoriesOnGoodsDealPages"],"guards":[{"name":"on_goods_deal","parameters":null}],"environments":[{"name":"main-js"}],"control":"ShowCategoriesOnGoodsDealPages"}},"diversion_type":"CookieDiversion"},"api-mobile-all-globalSearchCategories1304USCA":{"experiments":{"globalSearchCategories1304USCA":{"name":"globalSearchCategories1304USCA","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["on","on"],"environments":[{"name":"main-api"}],"control":"on"}},"diversion_type":"CookieDiversion"},"api-mobile-all-updateShareOnDealDetails1304USCA":{"experiments":{"updateShareOnDealDetails1304USCA":{"name":"updateShareOnDealDetails1304USCA","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["Original","Original","Original","Original","Original","Original","Original","Original","Original","Original"],"environments":[{"name":"main-api"}],"control":"Original"}},"diversion_type":"CookieDiversion"},"api-mobile-all-qaDiscussionsUSCA1305":{"experiments":{"qaDiscussionsUSCA1305":{"name":"qaDiscussionsUSCA1305","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["on"],"environments":[{"name":"main-api"}],"control":"on"}},"diversion_type":"CookieDiversion"},"api-mobile-all-CCChallenge1305USCA":{"experiments":{"CCChallenge1305USCA":{"name":"CCChallenge1305USCA","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["on"],"environments":[{"name":"main-api"}],"control":"on"}},"diversion_type":"CookieDiversion"},"api-mobile-all-merchantWriteupUSCA1305":{"experiments":{"merchantWriteupUSCA1305":{"name":"merchantWriteupUSCA1305","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["on"],"environments":[{"name":"main-api"}],"control":"on"}},"diversion_type":"CookieDiversion"},"CSHelpWizard":{"experiments":{"RedirectToItierSupport":{"name":"RedirectToItierSupport","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["helpwizard"],"environments":[{"name":"main-backend"}],"control":"helpwizard"}},"diversion_type":"CookieDiversion"},"api-mobile-android-promonone1207":{"experiments":{"promoNone1207":{"name":"promoNone1207","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["on"],"environments":[{"name":"api-mobile-all"},{"name":"main-api"}],"control":"on"}},"diversion_type":"CookieDiversion"},"api-mobile-iphone-promonone1207":{"experiments":{"promoNone1207":{"name":"promoNone1207","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":false,"variants":["Original","on"],"environments":[{"name":"api-mobile-all"},{"name":"main-api"}],"control":"Original"}},"diversion_type":"CookieDiversion"},"VariationSelectorWidget":{"experiments":{"VariationSelectorWidget":{"name":"VariationSelectorWidget","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":true,"variants":["NewVariationSelectorWidget"],"guards":[{"name":"on_goods_deal","parameters":null}],"environments":[{"name":"main-js"}],"control":"NewVariationSelectorWidget"}},"diversion_type":"CookieDiversion"},"reserve-landing-hero-image":{"experiments":{"ReserveLandingSwitchHeroText":{"name":"ReserveLandingSwitchHeroText","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":true,"variants":["ShowVariant2","Control","ShowVariant3"],"guards":[{"name":"division_enabled_for_reserve","parameters":null}],"environments":[{"name":"main-js"}],"control":"Control"}},"diversion_type":"CookieDiversion"},"api-mobile-all-reserveUSCA1307":{"experiments":{"reserveUSCA1307":{"name":"reserveUSCA1307","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":false,"variants":["on","on","on","on","on","on","on","on","on","on","on","on","on","on","on","on","on","on","on","on"],"environments":[{"name":"api-mobile-all"},{"name":"main-api"}],"control":"on"}},"diversion_type":"CookieDiversion"},"checkout-itier":{"experiments":{"BookingEngine":{"name":"BookingEngine","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":true,"variants":["PrePurchaseWithBuyButton","PrePurchaseWithBuyButton","PrePurchaseWithBuyButton","PrePurchaseWithBuyButton","PrePurchaseWithBuyButton","PrePurchaseWithBuyButton","PrePurchaseWithBuyButton","PrePurchaseWithBuyButton","PrePurchaseWithBuyButton","PostPurchase"],"environments":[{"name":"main-js"}],"control":"PrePurchaseWithBuyButton"}},"diversion_type":"CookieDiversion"},"api-mobile-iphone-iovationBlackbox1301":{"experiments":{"iovationBlackbox1301":{"name":"iovationBlackbox1301","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["on","on"],"environments":[{"name":"main-api"}],"control":"on"}},"diversion_type":"CookieDiversion"},"api-mobile-android-goodsFreeShippingUSCA1307":{"experiments":{"goodsFreeShippingUSCA1307":{"name":"goodsFreeShippingUSCA1307","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["button","button","button","button"],"environments":[{"name":"main-api"}],"control":"button"}},"diversion_type":"CookieDiversion"},"api-mobile-android-personalCollectionsAnon1305":{"experiments":{"personalCollectionsAnon1305":{"name":"personalCollectionsAnon1305","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":false,"variants":["on","Original"],"environments":[{"name":"birdcage"},{"name":"main-api"}],"control":"Original"}},"diversion_type":"CookieDiversion"},"api-mobile-android-onboardingEU1305":{"experiments":{"onboardingEU1305":{"name":"onboardingEU1305","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["on"],"environments":[{"name":"main-api"}],"control":"on"}},"diversion_type":"CookieDiversion"},"api-mobile-all-goodsOptionsImagesUSCA1307":{"experiments":{"goodsOptionsImagesUSCA1307":{"name":"goodsOptionsImagesUSCA1307","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["on"],"environments":[{"name":"api-mobile-all"},{"name":"main-api"}],"control":"on"}},"diversion_type":"CookieDiversion"},"api-mobile-all-checkoutPromptCC1307":{"experiments":{"checkoutPromptCC1307":{"name":"checkoutPromptCC1307","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["on","on"],"environments":[{"name":"api-mobile-all"},{"name":"main-api"}],"control":"on"}},"diversion_type":"CookieDiversion"},"DealOptionImages":{"experiments":{"DealOptionImages":{"name":"DealOptionImages","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":true,"variants":["ShowDealOptionImages"],"guards":[{"name":"on_goods_deal_with_option_images","parameters":null}],"environments":[{"name":"main-js"}],"control":"ShowDealOptionImages"}},"diversion_type":"CookieDiversion"},"api-mobile-all-expandSearchBox1309USCA":{"experiments":{"expandSearchBox1309USCA":{"name":"expandSearchBox1309USCA","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["on","on"],"environments":[{"name":"main-api"}],"control":"on"}},"diversion_type":"CookieDiversion"},"CSHelpWizardReturnability":{"experiments":{"CSReturnability":{"name":"CSReturnability","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["ShowReturnItemButton"],"environments":[{"name":"main-backend"}],"control":"ShowReturnItemButton"}},"diversion_type":"CookieDiversion"},"api-mobile-ipad-carousel1305":{"experiments":{"carousel1305":{"name":"carousel1305","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["on","on","on","on"],"environments":[{"name":"api-mobile-all"}],"control":"on"}},"diversion_type":"CookieDiversion"},"api-mobile-ipad-dealpage1305":{"experiments":{"dealpage1305":{"name":"dealpage1305","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["map_down","map_down","map_down","map_down"],"environments":[{"name":"api-mobile-all"}],"control":"map_down"}},"diversion_type":"CookieDiversion"},"api-mobile-ipad-dealcard1305":{"experiments":{"dealcard1305":{"name":"dealcard1305","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["on","on","on","on"],"environments":[{"name":"api-mobile-all"}],"control":"on"}},"diversion_type":"CookieDiversion"},"api-mobile-ipad-globalsearch1305US":{"experiments":{"globalsearch1305US":{"name":"globalsearch1305US","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["on","on","on","on"],"environments":[{"name":"api-mobile-all"}],"control":"on"}},"diversion_type":"CookieDiversion"},"api-mobile-ipad-Local1305":{"experiments":{"Local1305":{"name":"Local1305","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["on","on","on","on"],"environments":[{"name":"api-mobile-all"}],"control":"on"}},"diversion_type":"CookieDiversion"},"VariationSelectorWidgetOnGLivePage":{"experiments":{"VariationSelectorWidgetOnGLivePage":{"name":"VariationSelectorWidgetOnGLivePage","status":"running","buckets":"830..929","bucket_min":830,"bucket_max":929,"tracking":true,"browser":true,"javascript_test":true,"variants":["NewVariationSelectorWidget","OldVariationSelectorWidget"],"environments":[{"name":"main-js"}],"control":"NewVariationSelectorWidget"}},"diversion_type":"CookieDiversion"},"booking-engine-myreservations":{"experiments":{"BookingEngine-MyReservations":{"name":"BookingEngine-MyReservations","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":true,"variants":["MyReservations"],"environments":[{"name":"main-js"}],"control":"MyReservations"}},"diversion_type":"CookieDiversion"},"itier-my-profile":{"experiments":{"ItierMyProfile":{"name":"ItierMyProfile","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["itier"],"environments":[{"name":"main-backend"}],"control":"itier"}},"diversion_type":"CookieDiversion"},"api-mobile-iphone-newCarousel1310":{"experiments":{"newCarousel1310":{"name":"newCarousel1310","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["on","on","on","on","on","on","on","on","on","on"],"environments":[{"name":"main-api"}],"control":"on"}},"diversion_type":"CookieDiversion"},"api-mobile-iphone-exposedSearchBox1310USCA":{"experiments":{"exposedSearchBox1310USCA":{"name":"exposedSearchBox1310USCA","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":false,"variants":["Original","on","on","on","on","on","on","on","on","on","on","on","on","on","on","on","on","on","on","on"],"environments":[{"name":"main-api"}],"control":"Original"}},"diversion_type":"CookieDiversion"},"api-mobile-iphone-newDealDetails1310":{"experiments":{"newDealDetails1310":{"name":"newDealDetails1310","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["on","on","on","on","on","on","on","on","on","on"],"environments":[{"name":"main-api"}],"control":"on"}},"diversion_type":"CookieDiversion"},"api-mobile-android-expandSearchBox1309USCA":{"experiments":{"expandSearchBox1309USCA":{"name":"expandSearchBox1309USCA","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":false,"variants":["on","on"],"environments":[{"name":"main-api"}],"control":"on"}},"diversion_type":"CookieDiversion"},"touch-interceptBR2208INTL-layer":{"experiments":{"touch-interceptBR2208INTL":{"name":"touch-interceptBR2208INTL","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":false,"variants":["ShowIntercept","ShowIntercept","Control","Control","Control","Control","Control","Control","Control","Control"],"guards":[{"name":"is_country_br?","parameters":null},{"name":"show_intercept_page?","parameters":null},{"name":"is_iphone_or_android_request?","parameters":null},{"name":"email_request_eu?","parameters":null}],"environments":[{"name":"touch-intl"}],"control":"Control"}},"diversion_type":"CookieDiversion"},"api-mobile-iphone-personalCollectionsAnon1305":{"experiments":{"personalCollectionsAnon1305":{"name":"personalCollectionsAnon1305","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":false,"variants":["Original","on"],"environments":[{"name":"api-mobile-all"}],"control":"Original"}},"diversion_type":"CookieDiversion"},"shopping_cart":{"experiments":{"ShoppingCart":{"name":"ShoppingCart","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":true,"variants":["showCart"],"guards":[{"name":"excludeBrowsers","parameters":{"browsers":[]}}],"environments":[{"name":"layout-service"},{"name":"main-js"}],"control":"showCart"}},"diversion_type":"CookieDiversion"},"touch-goodsOneTrait0204USCA":{"experiments":{"goodsOneTrait0204USCA":{"name":"goodsOneTrait0204USCA","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":false,"variants":["Control","Control","Control","Control","Control","Control","Control","Control","Control","Control","traitFirst","traitFirst","traitFirst","traitFirst","traitFirst","traitFirst","traitFirst","traitFirst","traitFirst","traitFirst","detailFirst","detailFirst","detailFirst","detailFirst","detailFirst","detailFirst","detailFirst","detailFirst","detailFirst","detailFirst"],"guards":[{"name":"is_us_platform?","parameters":null}],"environments":[{"name":"touch-intl"}],"control":"Control"}},"diversion_type":"CookieDiversion"},"api-mobile-all-goodsTwoTraitImages1309USCA":{"experiments":{"goodsTwoTraitImages1309USCA":{"name":"goodsTwoTraitImages1309USCA","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["on","on"],"environments":[{"name":"main-api"}],"control":"on"}},"diversion_type":"CookieDiversion"},"api-mobile-all-redesignSignIn1309":{"experiments":{"redesignSignIn1309":{"name":"redesignSignIn1309","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":false,"variants":["on","on","on","on","on","on","on","on","on","on"],"environments":[{"name":"main-api"}],"control":"on"}},"diversion_type":"CookieDiversion"},"api-mobile-all-multipleShipping1309USCA":{"experiments":{"multipleShipping1309USCA":{"name":"multipleShipping1309USCA","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["on","on","on","on","on","on","on","on","on","on"],"environments":[{"name":"main-api"}],"control":"on"}},"diversion_type":"CookieDiversion"},"api-mobile-iphone-onboardingEU1305":{"experiments":{"onboardingEU1305":{"name":"onboardingEU1305","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["on"],"environments":[{"name":"main-api"}],"control":"on"}},"diversion_type":"CookieDiversion"},"touch-emailtoappinterstitial1309US":{"experiments":{"emailtoappinterstitial1309US":{"name":"emailtoappinterstitial1309US","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":false,"variants":["Intercept","Intercept","Intercept","Intercept","Intercept","Intercept","Intercept","Intercept","Intercept","Intercept"],"guards":[{"name":"is_us_platform?","parameters":null},{"name":"is_iphone?","parameters":null},{"name":"email_request?","parameters":null},{"name":"include_link_to_app?","parameters":null},{"name":"is_deals_request?","parameters":null}],"environments":[{"name":"touch-intl"}],"control":"Intercept"}},"diversion_type":"CookieDiversion"},"RedirectCustomerSupportFaqTab":{"experiments":{"RedirectToItierSupportFaqTab":{"name":"RedirectToItierSupportFaqTab","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["faqTab"],"environments":[{"name":"main-backend"}],"control":"faqTab"}},"diversion_type":"CookieDiversion"},"contact_us_user_info":{"experiments":{"DropDownComb":{"name":"DropDownComb","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":true,"variants":["ShowContactInfoFields"],"environments":[{"name":"main-js"}],"control":"ShowContactInfoFields"}},"diversion_type":"CookieDiversion"},"getaways-itier":{"experiments":{"getaways-itier":{"name":"getaways-itier","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["MR"],"environments":[{"name":"main-backend"}],"control":"MR"}},"diversion_type":"CookieDiversion"},"refinement-bar":{"experiments":{"RefinementBar":{"name":"RefinementBar","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["Treatment"],"environments":[{"name":"main-backend"}],"control":"Treatment"}},"diversion_type":"CookieDiversion"},"touch-linktoappandroid0913INTL":{"experiments":{"linktoappandroid0913INTL":{"name":"linktoappandroid0913INTL","status":"running","buckets":"0..99","bucket_min":0,"bucket_max":99,"tracking":false,"browser":true,"javascript_test":false,"variants":["RedirectToNativeApp","Original"],"guards":[{"name":"include_link_to_app?","parameters":null},{"name":"is_eu_platform?","parameters":null},{"name":"is_android_without_blacklisted_devices?","parameters":null},{"name":"not_android_dispatch_fallback?","parameters":null},{"name":"email_request_eu?","parameters":null},{"name":"link_to_app_countries?","parameters":null}],"environments":[{"name":"touch-intl"}],"control":"Original"}},"diversion_type":"CookieDiversion"},"PromNight":{"experiments":{"PromNightHeaderV2":{"name":"PromNightHeaderV2","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":true,"variants":["showV2"],"environments":[{"name":"main-js"},{"name":"layout-service"}],"control":"showV2"}},"diversion_type":"CookieDiversion"},"touch-deal-ita-redirect":{"experiments":{"mobileRedirect":{"name":"mobileRedirect","status":"running","buckets":"0..0","bucket_min":0,"bucket_max":0,"tracking":true,"browser":true,"javascript_test":false,"variants":["control"],"environments":[{"name":"main-backend"}],"control":"control"}},"diversion_type":"CookieDiversion"},"itier-seo-pages-subscription":{"experiments":{"itier-seo-pages-subscription-experiment":{"name":"itier-seo-pages-subscription-experiment","status":"running","buckets":"0..666","bucket_min":0,"bucket_max":666,"tracking":true,"browser":true,"javascript_test":false,"variants":["subscription_fullScreen_1_showContinue","subscription_modalDialog_7_showContinue_showSocial"],"environments":[{"name":"layout-service-browser"}],"control":"subscription_fullScreen_1_showContinue"}},"diversion_type":"CookieDiversion"},"goods-refinement-bar":{"experiments":{"GoodsRefinementBar":{"name":"GoodsRefinementBar","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":false,"variants":["Treatment"],"environments":[{"name":"main-backend"}],"control":"Treatment"}},"diversion_type":"CookieDiversion"},"Iovation":{"experiments":{"IovationBlackbox":{"name":"IovationBlackbox","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["Treatment"],"environments":[{"name":"main-backend"}],"control":"Treatment"}},"diversion_type":"CookieDiversion"},"GoodsBrowsePageLayout":{"experiments":{"GoodsBrowsePageLayout":{"name":"GoodsBrowsePageLayout","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":true,"variants":["megaMindHome"],"environments":[{"name":"main-js"}],"control":"megaMindHome"}},"diversion_type":"CookieDiversion"},"crm_messages_layout_service":{"experiments":{"InAppMessagesLayoutService":{"name":"InAppMessagesLayoutService","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":true,"variants":["enable"],"environments":[{"name":"main-js"},{"name":"layout-service"}],"control":"enable"}},"diversion_type":"CookieDiversion"},"api-mobile-iphone-newDealList1310":{"experiments":{"newDealList1310":{"name":"newDealList1310","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["on","on","on","on","on","on","on","on","on","on"],"environments":[{"name":"main-api"}],"control":"on"}},"diversion_type":"CookieDiversion"},"api-mobile-all-sendAsGiftINT1310":{"experiments":{"sendAsGiftINT1310":{"name":"sendAsGiftINT1310","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["on","on","on","on","on","on","on","on","on","on"],"environments":[{"name":"main-api"}],"control":"on"}},"diversion_type":"CookieDiversion"},"api-mobile-iphone-reservePhone1310US":{"experiments":{"reservePhone1310US":{"name":"reservePhone1310US","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":false,"variants":["Original","Original","Original","Original","Original","on","on","on","on","on"],"environments":[{"name":"main-api"}],"control":"Original"}},"diversion_type":"CookieDiversion"},"api-mobile-ipad-onboarding1307US":{"experiments":{"onboarding1307US":{"name":"onboarding1307US","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":false,"variants":["Original","on","Original","on","on","on","on","on","on","on","on","on","on","on","on","on","on","on","on"],"environments":[{"name":"api-mobile-ipad"}],"control":"Original"}},"diversion_type":"CookieDiversion"},"api-mobile-ipad-dealcard1307":{"experiments":{"dealcard1307":{"name":"dealcard1307","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":false,"variants":["on","on","on","on","on","Original","Original","Original","Original","Original"],"environments":[{"name":"api-mobile-ipad"}],"control":"Original"}},"diversion_type":"CookieDiversion"},"api-mobile-ipad-megamind1307US":{"experiments":{"megamind1307US":{"name":"megamind1307US","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":false,"variants":["v1","v1","v2","v2","Original","Original","Original","Original","Original","Original"],"environments":[{"name":"api-mobile-ipad"}],"control":"v1"}},"diversion_type":"CookieDiversion"},"api-mobile-ipad-accordion1307US":{"experiments":{"accordion1307US":{"name":"accordion1307US","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["Original","Original","Original","Original","Original","Original","Original","Original","Original","Original"],"environments":[{"name":"api-mobile-ipad"}],"control":"Original"}},"diversion_type":"CookieDiversion"},"api-mobile-ipad-favorites1307US":{"experiments":{"favorites1307US":{"name":"favorites1307US","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":false,"variants":["Original","on","Original","on","Original","on","Original","on","Original","on"],"environments":[{"name":"api-mobile-ipad"}],"control":"Original"}},"diversion_type":"CookieDiversion"},"PromNightCoupons":{"experiments":{"PromNightCoupons":{"name":"PromNightCoupons","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":true,"variants":["hide","showFreebies","showFreebies","showFreebies","showFreebies","showFreebies","showFreebies","showFreebies","showFreebies","showFreebies","showFreebies","showFreebies","showFreebies","showFreebies","showFreebies","showFreebies","showFreebies","showFreebies"],"guards":[{"name":"excludeBrowsers","parameters":{"browsers":[{"name":"ie","comparator":"lte","version":"7"}]}}],"environments":[{"name":"layout-service"},{"name":"main-js"}],"control":"hide"}},"diversion_type":"CookieDiversion"},"PromNightGifts":{"experiments":{"PromNightGifts":{"name":"PromNightGifts","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":true,"variants":["showBestOfCampaignIcon"],"environments":[{"name":"layout-service"},{"name":"main-js"}],"control":"showBestOfCampaignIcon"}},"diversion_type":"CookieDiversion"},"api-mobile-ipad-imageServiceResizing1310USCA":{"experiments":{"imageServiceResizing1310USCA":{"name":"imageServiceResizing1310USCA","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["on","on","on","on","on"],"environments":[{"name":"api-mobile-ipad"}],"control":"on"}},"diversion_type":"CookieDiversion"},"GoodsCartCheckoutGiftCode":{"experiments":{"GoodsCartCheckoutGiftCode":{"name":"GoodsCartCheckoutGiftCode","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["Treatment"],"environments":[{"name":"main-backend"}],"control":"Treatment"}},"diversion_type":"CookieDiversion"},"GsmMerchantSearch":{"experiments":{"gsm_merchant_search":{"name":"gsm_merchant_search","status":"running","buckets":"0..499","bucket_min":0,"bucket_max":499,"tracking":true,"browser":true,"javascript_test":true,"variants":["NoSearch","ShowSearch"],"guards":[{"name":"excludeBrowsers","parameters":{"browsers":[{"name":"ie","comparator":"lte","version":"7"}]}}],"environments":[{"name":"main-backend"},{"name":"main-js"}],"control":"NoSearch"}},"diversion_type":"CookieDiversion"},"api-mobile-android-iovationBlackbox1301":{"experiments":{"iovationBlackbox1301":{"name":"iovationBlackbox1301","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":false,"variants":["on","on"],"environments":[{"name":"main-api"}],"control":"on"}},"diversion_type":"CookieDiversion"},"GsmCouponsExperiments":{"experiments":{"CouponsMerchantLink":{"name":"CouponsMerchantLink","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":false,"variants":["NoCoupons","SeeCoupons"],"environments":[{"name":"main-backend"}],"control":"NoCoupons"}},"diversion_type":"CookieDiversion"},"touch-sendAsGift1311INTL":{"experiments":{"sendAsGift1311INTL":{"name":"sendAsGift1311INTL","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":false,"variants":["Control","on","on","on","on","on","on","on","on","on"],"guards":[{"name":"is_eu_platform?","parameters":null}],"environments":[{"name":"api-mobile-all"},{"name":"touch-intl"}],"control":"Control"}},"diversion_type":"CookieDiversion"},"api-mobile-android-giftShop1310USCA":{"experiments":{"giftShop1310USCA":{"name":"giftShop1310USCA","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["Original","Original","Original","Original","Original","Original","Original","Original","Original","Original"],"environments":[{"name":"api-mobile-all"}],"control":"Original"}},"diversion_type":"CookieDiversion"},"GoodsCartCheckoutGiftMsg":{"experiments":{"GoodsCartCheckoutGiftMsg":{"name":"GoodsCartCheckoutGiftMsg","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["Treatment"],"environments":[{"name":"main-backend"}],"control":"Treatment"}},"diversion_type":"CookieDiversion"},"touch-blinkBanner1107INTL":{"experiments":{"blinkBanner1107INTL":{"name":"blinkBanner1107INTL","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":false,"variants":["Control","showBanner"],"guards":[{"name":"is_eu_platform?","parameters":null}],"environments":[{"name":"touch-intl"}],"control":"Control"}},"diversion_type":"CookieDiversion"},"api-mobile-iphone-tabOrderIT1309":{"experiments":{"tabOrderIT1309":{"name":"tabOrderIT1309","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["featured:travel,featured,shopping,occasions"],"environments":[{"name":"main-api"}],"control":"featured:travel,featured,shopping,occasions"}},"diversion_type":"CookieDiversion"},"api-mobile-iphone-tabOrderFR1309":{"experiments":{"tabOrderFR1309":{"name":"tabOrderFR1309","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["featured:travel,featured,shopping,occasions"],"environments":[{"name":"main-api"}],"control":"featured:travel,featured,shopping,occasions"}},"diversion_type":"CookieDiversion"},"merchant-self-service-engine":{"experiments":{"S3-Deal-Builder":{"name":"S3-Deal-Builder","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":true,"variants":["Control","DealBuilder"],"environments":[{"name":"main-js"}],"control":"Control"}},"diversion_type":"CookieDiversion"},"api-mobile-iphone-tabOrderINT1309":{"experiments":{"tabOrderINT1309":{"name":"tabOrderINT1309","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["featured:nearby,travel,featured,shopping,occasions,concerts"],"environments":[{"name":"main-api"}],"control":"featured:nearby,travel,featured,shopping,occasions,concerts"}},"diversion_type":"CookieDiversion"},"deal-ita-goods-shipping":{"experiments":{"DealPageGoodsShippingUpdate":{"name":"DealPageGoodsShippingUpdate","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["enable"],"environments":[{"name":"main-backend"}],"control":"enable"}},"diversion_type":"CookieDiversion"},"getaways-mrcheckout":{"experiments":{"getaways-mrcheckout":{"name":"getaways-mrcheckout","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":false,"variants":["mrcheckout"],"environments":[{"name":"main-backend"}],"control":"mrcheckout"}},"diversion_type":"CookieDiversion"},"Gifting_Itier_Checkout":{"experiments":{"Gift_Scheduler":{"name":"Gift_Scheduler","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["activateScheduler","control"],"environments":[{"name":"checkout-itier"}],"control":"control"}},"diversion_type":"CookieDiversion"},"homepage-scenario":{"experiments":{"homepage-pseudo-fresh":{"name":"homepage-pseudo-fresh","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":false,"variants":["control","pseudo_fresh_v1","pseudo_fresh_v1","pseudo_fresh_v1","pseudo_fresh_v1","pseudo_fresh_v1","pseudo_fresh_v1","pseudo_fresh_v1","pseudo_fresh_v1","pseudo_fresh_v1"],"environments":[{"name":"homepage"}],"control":"control"}},"diversion_type":"CookieDiversion"},"homepage-closest-place-distance":{"experiments":{"ClosestPlaceDistance":{"name":"ClosestPlaceDistance","status":"running","buckets":"0..399","bucket_min":0,"bucket_max":399,"tracking":true,"browser":true,"javascript_test":false,"variants":["Control","ShowDistance"],"environments":[{"name":"homepage"}],"control":"Control"}},"diversion_type":"CookieDiversion"},"touch-iovation1311US":{"experiments":{"iovation1311US":{"name":"iovation1311US","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":false,"variants":["on","Control"],"guards":[{"name":"is_us_platform?","parameters":null}],"environments":[{"name":"touch-intl"}],"control":"Control"}},"diversion_type":"CookieDiversion"},"touch-goodsTwoTraits0204USCA":{"experiments":{"goodsTwoTraits0204USCA":{"name":"goodsTwoTraits0204USCA","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":false,"variants":["Control","Control","Control","Control","Control","Control","Control","Control","Control","Control","traitFirst","traitFirst","traitFirst","traitFirst","traitFirst","traitFirst","traitFirst","traitFirst","traitFirst","traitFirst","detailFirst","detailFirst","detailFirst","detailFirst","detailFirst","detailFirst","detailFirst","detailFirst","detailFirst","detailFirst"],"guards":[{"name":"is_us_platform?","parameters":null}],"environments":[{"name":"touch-intl"}],"control":"Control"}},"diversion_type":"CookieDiversion"},"secure-address-book-lite-cart-checkout":{"experiments":{"SecureAddressBookLiteCartCheckout":{"name":"SecureAddressBookLiteCartCheckout","status":"running","buckets":"0..0","bucket_min":0,"bucket_max":0,"tracking":true,"browser":true,"javascript_test":false,"variants":["Control","Treatment"],"environments":[{"name":"main-backend"}],"control":"Control"}},"diversion_type":"CookieDiversion"},"api-mobile-android-marketRateUSCA1312":{"experiments":{"marketRateUSCA1312":{"name":"marketRateUSCA1312","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["Original","Original","twoTab","twoTab","twoTab","twoTab","twoTab","twoTab","twoTab","twoTab","twoTab","twoTab","twoTab","twoTab","twoTab","twoTab","twoTab","twoTab","twoTab","twoTab"],"environments":[{"name":"api-mobile-all"}],"control":"Original"}},"diversion_type":"CookieDiversion"},"api-mobile-iphone-marketRateUSCA1312":{"experiments":{"marketRateUSCA1312":{"name":"marketRateUSCA1312","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["oneTab","oneTab","oneTab","oneTab","oneTab","oneTab","oneTab","oneTab","oneTab","oneTab","oneTab","oneTab","oneTab","oneTab","oneTab","oneTab","oneTab","oneTab","oneTab","oneTab"],"environments":[{"name":"api-mobile-all"}],"control":"oneTab"}},"diversion_type":"CookieDiversion"},"api-mobile-all-getawaysGBucksBack1312USCA":{"experiments":{"getawaysGBucksBack1312USCA":{"name":"getawaysGBucksBack1312USCA","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["on","on","on","on","on","on","on","on","on","on"],"environments":[{"name":"api-mobile-all"}],"control":"on"}},"diversion_type":"CookieDiversion"},"responsive-purchase-funnel":{"experiments":{"ResponsiveFunnel":{"name":"ResponsiveFunnel","status":"running","buckets":"0..399","bucket_min":0,"bucket_max":399,"tracking":true,"browser":true,"javascript_test":false,"variants":["control","enable"],"environments":[{"name":"main-backend"}],"control":"control"}},"diversion_type":"CookieDiversion"},"GoodsCartMegamind":{"experiments":{"GoodsCartMegamind":{"name":"GoodsCartMegamind","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":false,"variants":["Treatment"],"environments":[{"name":"main-backend"}],"control":"Treatment"}},"diversion_type":"CookieDiversion"},"getaways-searchbar":{"experiments":{"getaways-searchbar":{"name":"getaways-searchbar","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":false,"variants":["horizontal"],"environments":[{"name":"main-backend"}],"control":"horizontal"}},"diversion_type":"CookieDiversion"},"getaways-flyout-horizontal":{"experiments":{"getaways-flyout-horizontal":{"name":"getaways-flyout-horizontal","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":false,"variants":["hFlyout"],"environments":[{"name":"main-backend"}],"control":"hFlyout"}},"diversion_type":"CookieDiversion"},"getaways-flyout-vertical":{"experiments":{"getaways-flyout-vertical":{"name":"getaways-flyout-vertical","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":false,"variants":["vFlyout"],"environments":[{"name":"main-backend"}],"control":"vFlyout"}},"diversion_type":"CookieDiversion"},"homepage-closed-loop":{"experiments":{"ClosedLoopDealTypes":{"name":"ClosedLoopDealTypes","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":false,"variants":["ClosedLoopCTA"],"environments":[{"name":"homepage"}],"control":"ClosedLoopCTA"}},"diversion_type":"CookieDiversion"},"header-all-deals-title":{"experiments":{"all-deals-title":{"name":"all-deals-title","status":"running","buckets":"0..499","bucket_min":0,"bucket_max":499,"tracking":false,"browser":true,"javascript_test":true,"variants":["All Deals","Local"],"environments":[{"name":"layout-service"},{"name":"main-js"}],"control":"All Deals"}},"diversion_type":"CookieDiversion"},"Redemption-Alchemy":{"experiments":{"NoAlchemyExperience":{"name":"NoAlchemyExperience","status":"running","buckets":"0..9","bucket_min":0,"bucket_max":9,"tracking":false,"browser":false,"javascript_test":false,"variants":["NoAlchemy"],"environments":[{"name":"mygroupons-itier"},{"name":"touch-intl"}],"control":"NoAlchemy"},"touch-AlchemyRedeem1401USCA":{"name":"touch-AlchemyRedeem1401USCA","status":"running","buckets":"10..59","bucket_min":10,"bucket_max":59,"tracking":true,"browser":false,"javascript_test":false,"variants":["AlchemyRedeemRedirect"],"environments":[{"name":"touch-intl"}],"control":"AlchemyRedeemRedirect"}},"diversion_type":"CookieDiversion"},"GoodsImageZoom":{"experiments":{"GoodsImageZoom":{"name":"GoodsImageZoom","status":"running","buckets":"0..499","bucket_min":0,"bucket_max":499,"tracking":false,"browser":true,"javascript_test":false,"variants":["Control","Treatment"],"environments":[{"name":"main-backend"}],"control":"Control"}},"diversion_type":"CookieDiversion"},"api-mobile-android-firstPageLimit":{"experiments":{"firstPageLimit":{"name":"firstPageLimit","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":false,"variants":["10","10","10","10","10","10","10","10","10","10","10","10","10","10","10","10","10","10","10","10","10","10","10","10","10","10","10","10","10","10"],"environments":[{"name":"api-mobile-all"}],"control":"10"}},"diversion_type":"CookieDiversion"},"Redemption-PDFVouchers":{"experiments":{"ShowPDFVouchers":{"name":"ShowPDFVouchers","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":false,"javascript_test":false,"variants":["pdf_vouchers"],"environments":[{"name":"mygroupons-itier"}],"control":"pdf_vouchers"}},"diversion_type":"CookieDiversion"},"GiftCard":{"experiments":{"GiftCardExperiment":{"name":"GiftCardExperiment","status":"running","buckets":"9999..9999","bucket_min":9999,"bucket_max":9999,"tracking":true,"browser":true,"javascript_test":false,"variants":["Control","showGiftCards"],"environments":[{"name":"main-backend"}],"control":"Control"}},"diversion_type":"CookieDiversion"},"GsmFacebookTracking":{"experiments":{"FacebookTracking":{"name":"FacebookTracking","status":"running","buckets":"0..9","bucket_min":0,"bucket_max":9,"tracking":true,"browser":true,"javascript_test":true,"variants":["control","hasTracking"],"environments":[{"name":"main-js"}],"control":"control"}},"diversion_type":"CookieDiversion"},"api-mobile-android-nearby1312INTL":{"experiments":{"nearby1312INTL":{"name":"nearby1312INTL","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":false,"variants":["Original","Original","Original","Original","on","on","on","on","on","on","on","on","on","on","on","on","on","on","on","on"],"environments":[{"name":"main-api"}],"control":"Original"}},"diversion_type":"CookieDiversion"},"api-mobile-iphone-nearby1312INTL":{"experiments":{"nearby1312INTL":{"name":"nearby1312INTL","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":false,"variants":["Original","Original","Original","Original","on","on","on","on","on","on","on","on","on","on","on","on","on","on","on","on"],"environments":[{"name":"main-api"}],"control":"Original"}},"diversion_type":"CookieDiversion"},"Itier-MyGifts":{"experiments":{"InstructionsPDF":{"name":"InstructionsPDF","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":true,"variants":["enablePDF"],"environments":[{"name":"main-js"},{"name":"mygroupons-itier"}],"control":"enablePDF"}},"diversion_type":"CookieDiversion"},"api-mobile-iphone-newCheckout1312":{"experiments":{"newCheckout1312":{"name":"newCheckout1312","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":false,"variants":["on","on","on","on","on","on","on","on","on","on"],"environments":[{"name":"main-api"}],"control":"on"}},"diversion_type":"CookieDiversion"},"api-mobile-iphone-newPullToRefresh1312USCA":{"experiments":{"newPullToRefresh1312USCA":{"name":"newPullToRefresh1312USCA","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":false,"variants":["Original","Original","Original","Original","Original","on","on","on","on","on"],"environments":[{"name":"main-api"}],"control":"Original"}},"diversion_type":"CookieDiversion"},"ShowHolidayEmailThemes":{"experiments":{"ShowHolidayEmailThemes":{"name":"ShowHolidayEmailThemes","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":false,"variants":["enable"],"environments":[{"name":"main-backend"}],"control":"enable"}},"diversion_type":"CookieDiversion"},"getaways-search-widget":{"experiments":{"dealpage-getaways-search":{"name":"dealpage-getaways-search","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":false,"variants":["bothSearch"],"environments":[{"name":"main-backend"}],"control":"bothSearch"}},"diversion_type":"CookieDiversion"},"high-value-purchase-alert":{"experiments":{"HighValuePurchaseAlert":{"name":"HighValuePurchaseAlert","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":true,"variants":["control","confirmationPage","receiptPage"],"environments":[{"name":"main-js"}],"control":"control"}},"diversion_type":"CookieDiversion"},"touch-emailtoappcookie1401US":{"experiments":{"emailtoappcookie1401US":{"name":"emailtoappcookie1401US","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":false,"variants":["On","On"],"guards":[{"name":"is_us_platform?","parameters":null},{"name":"is_iphone?","parameters":null},{"name":"email_request?","parameters":null},{"name":"include_link_to_app?","parameters":null},{"name":"is_deals_request?","parameters":null}],"environments":[{"name":"touch-intl"}],"control":"On"}},"diversion_type":"CookieDiversion"},"api-mobile-ipad-popupmigrate1312":{"experiments":{"popupmigrate1312":{"name":"popupmigrate1312","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":false,"variants":["Original","on","on","Original"],"environments":[{"name":"api-mobile-ipad"}],"control":"Original"}},"diversion_type":"CookieDiversion"},"touch-emailtoappinterstitial1401INTL":{"experiments":{"emailtoappinterstitial1401INTL":{"name":"emailtoappinterstitial1401INTL","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":false,"variants":["Intercept","Control"],"guards":[{"name":"is_eu_platform?","parameters":null},{"name":"is_iphone?","parameters":null},{"name":"email_request_eu?","parameters":null},{"name":"include_link_to_app?","parameters":null},{"name":"is_deals_request?","parameters":null},{"name":"email_intercept_countries?","parameters":null}],"environments":[{"name":"touch-intl"}],"control":"Control"}},"diversion_type":"CookieDiversion"},"deal-page-v2":{"experiments":{"DealPageV2":{"name":"DealPageV2","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":false,"browser":true,"javascript_test":true,"variants":["enable"],"environments":[{"name":"main-js"}],"control":"enable"}},"diversion_type":"CookieDiversion"},"checkout-ui-redesign":{"experiments":{"UIRedesign":{"name":"UIRedesign","status":"running","buckets":"0..99","bucket_min":0,"bucket_max":99,"tracking":true,"browser":true,"javascript_test":true,"variants":["oldUI","newUI"],"environments":[{"name":"main-js"}],"control":"oldUI"}},"diversion_type":"CookieDiversion"},"deal-page-reverse-title-order":{"experiments":{"DealPageReverseTitleOrder":{"name":"DealPageReverseTitleOrder","status":"running","buckets":"0..399","bucket_min":0,"bucket_max":399,"tracking":true,"browser":true,"javascript_test":false,"variants":["control","enable"],"environments":[{"name":"main-backend"}],"control":"control"}},"diversion_type":"CookieDiversion"},"api-mobile-iphone-marketRateUSCA1401":{"experiments":{"marketRateUSCA1401":{"name":"marketRateUSCA1401","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":false,"variants":["Original","Original","oneTab","oneTab","twoTab","twoTab","twoTab","twoTab","twoTab","twoTab","twoTab","twoTab","twoTab","twoTab","twoTab","twoTab","twoTab","twoTab","twoTab","twoTab"],"environments":[{"name":"api-mobile-all"}],"control":"Original"}},"diversion_type":"CookieDiversion"},"gsm_everyscape":{"experiments":{"GsmEveryScapeExperiment":{"name":"GsmEveryScapeExperiment","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":true,"variants":["NoEveryScape","ShowEveryScape"],"environments":[{"name":"main-js"}],"control":"NoEveryScape"}},"diversion_type":"CookieDiversion"},"getaways-gallery-banner":{"experiments":{"getaways-gallery-banner":{"name":"getaways-gallery-banner","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":false,"variants":["control","getawaysBanner"],"environments":[{"name":"main-backend"}],"control":"control"}},"diversion_type":"CookieDiversion"},"getaways_gallery_star_ratings":{"experiments":{"getaways-display-star-ratings":{"name":"getaways-display-star-ratings","status":"running","buckets":"0..199","bucket_min":0,"bucket_max":199,"tracking":true,"browser":true,"javascript_test":false,"variants":["control","displayStarRatings"],"environments":[{"name":"main-backend"}],"control":"control"}},"diversion_type":"CookieDiversion"},"api-mobile-iphone-firstPageLimit":{"experiments":{"firstPageLimit":{"name":"firstPageLimit","status":"running","buckets":"0..499","bucket_min":0,"bucket_max":499,"tracking":true,"browser":true,"javascript_test":false,"variants":["Original","10"],"environments":[{"name":"main-api"}],"control":"Original"}},"diversion_type":"CookieDiversion"},"api-mobile-iphone-pageLimit":{"experiments":{"pageLimit":{"name":"pageLimit","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":false,"variants":["20"],"environments":[{"name":"main-api"}],"control":"20"}},"diversion_type":"CookieDiversion"},"merchant_info":{"experiments":{"MerchantLocationInfo":{"name":"MerchantLocationInfo","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":true,"variants":["ShowMerchantLocationInfo"],"environments":[{"name":"main-js"}],"control":"ShowMerchantLocationInfo"}},"diversion_type":"CookieDiversion"},"file_upload":{"experiments":{"FileUpload":{"name":"FileUpload","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":true,"variants":["ShowFileUpload"],"environments":[{"name":"main-js"}],"control":"ShowFileUpload"}},"diversion_type":"CookieDiversion"},"getaways-hotelsearch":{"experiments":{"getaways-hotelsearch":{"name":"getaways-hotelsearch","status":"running","buckets":"9999..9999","bucket_min":9999,"bucket_max":9999,"tracking":true,"browser":true,"javascript_test":false,"variants":["control","searchbar"],"environments":[{"name":"main-backend"}],"control":"control"}},"diversion_type":"CookieDiversion"},"GoodsBasics":{"experiments":{"GoodsBasics":{"name":"GoodsBasics","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":true,"variants":["hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide","hide"],"environments":[{"name":"layout-service"},{"name":"main-js"}],"control":"hide"}},"diversion_type":"CookieDiversion"},"raf2":{"experiments":{"url_switch":{"name":"url_switch","status":"running","buckets":"9999..9999","bucket_min":9999,"bucket_max":9999,"tracking":true,"browser":true,"javascript_test":true,"variants":["control","url_switch"],"environments":[{"name":"main-js"}],"control":"control"}},"diversion_type":"CookieDiversion"},"TrackBeforeUnload":{"experiments":{"trackBeforeUnload":{"name":"trackBeforeUnload","status":"running","buckets":"0..19","bucket_min":0,"bucket_max":19,"tracking":true,"browser":true,"javascript_test":true,"variants":["control","on"],"environments":[{"name":"main-js"}],"control":"control"}},"diversion_type":"CookieDiversion"},"LayoutService":{"experiments":{"PromNightFooterV2":{"name":"PromNightFooterV2","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":false,"variants":["showSimplifiedFooter"],"environments":[{"name":"layout-service"}],"control":"showSimplifiedFooter"}},"diversion_type":"CookieDiversion"},"deal-widget-email-landing":{"experiments":{"DealPageCustomersAlsoViewedInMiddleSlot":{"name":"DealPageCustomersAlsoViewedInMiddleSlot","status":"running","buckets":"9999..9999","bucket_min":9999,"bucket_max":9999,"tracking":true,"browser":true,"javascript_test":true,"variants":["control","enable"],"environments":[{"name":"main-js"}],"control":"control"}},"diversion_type":"CookieDiversion"},"touch-IntlNearby3001INTL":{"experiments":{"IntlNearby3001INTL":{"name":"IntlNearby3001INTL","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":false,"variants":["Control","Control","Control","Control","Control","Control","Control","Control","Control","on"],"guards":[{"name":"is_eu_platform?","parameters":null},{"name":"is_country_uk?","parameters":null}],"environments":[{"name":"touch-intl"}],"control":"Control"}},"diversion_type":"CookieDiversion"},"touch-IntlSearch3001INTL":{"experiments":{"IntlSearch3001INTL":{"name":"IntlSearch3001INTL","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":false,"variants":["Control","Control","Control","Control","Control","Control","Control","Control","Control","on"],"guards":[{"name":"is_eu_platform?","parameters":null},{"name":"is_country_uk?","parameters":null}],"environments":[{"name":"touch-intl"}],"control":"Control"}},"diversion_type":"CookieDiversion"},"touch-emailtoappdealdetailsplus1401US":{"experiments":{"emailtoappdealdetailsplus1401US":{"name":"emailtoappdealdetailsplus1401US","status":"running","buckets":"0..499","bucket_min":0,"bucket_max":499,"tracking":true,"browser":true,"javascript_test":false,"variants":["Control","Control","Control","Control","Control","Control","Control","Control","Control","Control"],"guards":[{"name":"is_us_platform?","parameters":null},{"name":"include_link_to_app?","parameters":null}],"environments":[{"name":"touch-intl"}],"control":"Control"}},"diversion_type":"CookieDiversion"},"api-mobile-android-tabOrderUK1309":{"experiments":{"tabOrderUK1309":{"name":"tabOrderUK1309","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":false,"variants":["featured:nearby,travel,featured,shopping,occasions"],"environments":[{"name":"main-api"}],"control":"featured:nearby,travel,featured,shopping,occasions"}},"diversion_type":"CookieDiversion"},"api-mobile-iphone-goodsFreeShippingUSCA1307":{"experiments":{"goodsFreeShippingUSCA1307":{"name":"goodsFreeShippingUSCA1307","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":false,"variants":["button"],"environments":[{"name":"main-api"}],"control":"button"}},"diversion_type":"CookieDiversion"},"api-mobile-iphone-nearbyCategories1401USCA":{"experiments":{"nearbyCategories1401USCA":{"name":"nearbyCategories1401USCA","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":false,"variants":["Original","Original","Original","Original","Original","on","on","on","on","on"],"environments":[{"name":"main-api"}],"control":"Original"}},"diversion_type":"CookieDiversion"},"api-mobile-iphone-nearby1401UK":{"experiments":{"nearby1401UK":{"name":"nearby1401UK","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":false,"variants":["Original","Original","on","on","on","on","on","on","on","on"],"environments":[{"name":"main-api"}],"control":"Original"}},"diversion_type":"CookieDiversion"},"api-mobile-iphone-intlSearch1401UK":{"experiments":{"intlSearch1401UK":{"name":"intlSearch1401UK","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":false,"variants":["Original","Original","Original","Original","Original","Original","Original","Original","Original","Original","Original","Original","Original","Original","Original","Original","Original","Original","Original","on"],"environments":[{"name":"main-api"}],"control":"Original"}},"diversion_type":"CookieDiversion"},"api-mobile-all-shoppingCart1402USCA":{"experiments":{"shoppingCart1402USCA":{"name":"shoppingCart1402USCA","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":false,"variants":["Original","Original","Original","Original","Original","Original","Original","Original","Original","Original","Original","Original","Original","Original","Original","Original","Original","Original","Original","DealDetails","Cart"],"environments":[{"name":"main-api"}],"control":"Original"}},"diversion_type":"CookieDiversion"},"api-mobile-all-shoppingCartBuyButton1402USCA":{"experiments":{"shoppingCartBuyButton1402USCA":{"name":"shoppingCartBuyButton1402USCA","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":false,"variants":["Original","Original","Original","Original","Original","Original","Original","Original","Original","Original","on","on","on","on","on","on","on","on","on","on"],"environments":[{"name":"main-api"}],"control":"Original"}},"diversion_type":"CookieDiversion"},"api-mobile-android-intlSearch1401UK":{"experiments":{"intlSearch1401UK":{"name":"intlSearch1401UK","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":false,"variants":["Original","Original","Original","Original","Original","Original","Original","Original","Original","Original","Original","Original","Original","Original","Original","Original","Original","Original","Original","on"],"environments":[{"name":"main-api"}],"control":"Original"}},"diversion_type":"CookieDiversion"},"api-mobile-android-androidRedesignCarousel1402":{"experiments":{"androidRedesignCarousel1402":{"name":"androidRedesignCarousel1402","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":false,"variants":["Original","Original","Original","Original","Original","Original","Original","Original","Original","Original","Original","Original","Original","Original","Original","on","on","on","on","on"],"environments":[{"name":"api-mobile-all"}],"control":"Original"}},"diversion_type":"CookieDiversion"},"api-mobile-android-androidRedesignDetails1402":{"experiments":{"androidRedesignDetails1402":{"name":"androidRedesignDetails1402","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":false,"variants":["Original","Original","Original","Original","Original","Original","Original","Original","Original","Original","Original","Original","Original","Original","Original","on","on","on","on","on"],"environments":[{"name":"api-mobile-all"}],"control":"Original"}},"diversion_type":"CookieDiversion"},"automerch-router":{"experiments":{"automerch-router":{"name":"automerch-router","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":false,"variants":["control","rotate_titles"],"environments":[{"name":"automerch"}],"control":"control"}},"diversion_type":"CookieDiversion"},"PromNightTopNav":{"experiments":{"PromNightTopNav":{"name":"PromNightTopNav","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":false,"variants":["AllDeals","Local","AllDealsAndLocal","AllDeals2AndLocal","HomeAndLocal"],"environments":[{"name":"layout-service"}],"control":"AllDeals"}},"diversion_type":"CookieDiversion"},"deal-page-previous-purchase":{"experiments":{"PreviousPurchaseBanner":{"name":"PreviousPurchaseBanner","status":"running","buckets":"9999..9999","bucket_min":9999,"bucket_max":9999,"tracking":true,"browser":true,"javascript_test":true,"variants":["control","enable"],"environments":[{"name":"main-js"}],"control":"control"}},"diversion_type":"CookieDiversion"},"pull-app-rendering":{"experiments":{"ServerSideRendering":{"name":"ServerSideRendering","status":"running","buckets":"0..9","bucket_min":0,"bucket_max":9,"tracking":true,"browser":true,"javascript_test":false,"variants":["Control","Treatment"],"environments":[{"name":"main-backend"}],"control":"Control"}},"diversion_type":"CookieDiversion"},"pull-gsm-list-view":{"experiments":{"PullGsmListView":{"name":"PullGsmListView","status":"running","buckets":"0..99","bucket_min":0,"bucket_max":99,"tracking":true,"browser":true,"javascript_test":false,"variants":["Control","ShowListViewToggle"],"environments":[{"name":"main-backend"}],"control":"Control"}},"diversion_type":"CookieDiversion"},"touch-ContactUs1401US":{"experiments":{"ContactUs1401US":{"name":"ContactUs1401US","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":false,"variants":["DisplayEntryPoints","Control"],"environments":[{"name":"touch-intl"},{"name":"main-backend"}],"control":"Control"}},"diversion_type":"CookieDiversion"},"api-mobile-ipad-iovationBlackbox1301":{"experiments":{"iovationBlackbox1301":{"name":"iovationBlackbox1301","status":"running","buckets":"0..499","bucket_min":0,"bucket_max":499,"tracking":true,"browser":true,"javascript_test":false,"variants":["Original","on"],"environments":[{"name":"main-api"}],"control":"Original"}},"diversion_type":"CookieDiversion"},"GoodsSecureDealUrls":{"experiments":{"GoodsSecureDealUrls":{"name":"GoodsSecureDealUrls","status":"running","buckets":"0..400","bucket_min":0,"bucket_max":400,"tracking":true,"browser":true,"javascript_test":false,"variants":["Control","Treatment"],"environments":[{"name":"main-backend"}],"control":"Control"}},"diversion_type":"CookieDiversion"},"browse-merchant-gift-cards":{"experiments":{"MerchantGiftCardDealCard":{"name":"MerchantGiftCardDealCard","status":"running","buckets":"9999..9999","bucket_min":9999,"bucket_max":9999,"tracking":true,"browser":true,"javascript_test":true,"variants":["Control","MerchantNameOverlay"],"environments":[{"name":"main-js"}],"control":"Control"}},"diversion_type":"CookieDiversion"},"GoodsBasicsBanner":{"experiments":{"GoodsBasicsBanner":{"name":"GoodsBasicsBanner","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":false,"variants":["Control"],"environments":[{"name":"main-backend"}],"control":"Control"}},"diversion_type":"CookieDiversion"},"GoodsBasicsSummaryMsg":{"experiments":{"GoodsBasicsSummaryMsg":{"name":"GoodsBasicsSummaryMsg","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":false,"variants":["Control"],"environments":[{"name":"main-backend"}],"control":"Control"}},"diversion_type":"CookieDiversion"},"LSHeaderClearance":{"experiments":{"LSHeaderClearance":{"name":"LSHeaderClearance","status":"running","buckets":"9999..9999","bucket_min":9999,"bucket_max":9999,"tracking":true,"browser":true,"javascript_test":false,"variants":["hide","show"],"environments":[{"name":"layout-service"}],"control":"hide"}},"diversion_type":"CookieDiversion"},"api-mobile-android-nearby1401UK":{"experiments":{"nearby1401UK":{"name":"nearby1401UK","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":false,"variants":["Original","Original","on","on","on","on","on","on","on","on"],"environments":[{"name":"main-api"}],"control":"Original"}},"diversion_type":"CookieDiversion"},"api-mobile-all-cancelOrder1401USCA":{"experiments":{"cancelOrder1401USCA":{"name":"cancelOrder1401USCA","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":false,"variants":["Original","Original","Original","Original","Original","Original","Original","Original","Original","Original","Original","Original","Original","Original","Original","Original","Original","Original","Original","on"],"environments":[{"name":"main-api"}],"control":"Original"}},"diversion_type":"CookieDiversion"},"api-mobile-android-reportABugUSCA1303":{"experiments":{"reportABugUSCA1303":{"name":"reportABugUSCA1303","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":false,"variants":["Original","Original","Original","Original","Original","Original","Original","on","on","on"],"environments":[{"name":"api-mobile-all"}],"control":"Original"}},"diversion_type":"CookieDiversion"},"api-mobile-android-reportABugINTL1303":{"experiments":{"reportABugINTL1303":{"name":"reportABugINTL1303","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":false,"variants":["Original","Original","Original","Original","Original","Original","Original","Original","Original","Original"],"environments":[{"name":"api-mobile-all"}],"control":"Original"}},"diversion_type":"CookieDiversion"},"lposubscriptionlayer":{"experiments":{"itierSubscriptionModalExperiment":{"name":"itierSubscriptionModalExperiment","status":"running","buckets":"0..999","bucket_min":0,"bucket_max":999,"tracking":true,"browser":true,"javascript_test":false,"variants":["Control","Modern"],"environments":[{"name":"lpo"}],"control":"Control"}},"diversion_type":"CookieDiversion"},"GoodsClearance":{"experiments":{"GoodsClearance":{"name":"GoodsClearance","status":"running","buckets":"0..19","bucket_min":0,"bucket_max":19,"tracking":true,"browser":true,"javascript_test":true,"variants":["Control","Treatment"],"environments":[{"name":"main-js"}],"control":"Control"}},"diversion_type":"CookieDiversion"}}
+        
+;
+        var layoutConfig =
+          {"itier-seo-pages-subscription":{"experiments":{"itier-seo-pages-subscription-experiment":{"name":"itier-seo-pages-subscription-experiment","status":"running","buckets":"0..666","bucket_min":0,"bucket_max":666,"tracking":true,"browser":true,"javascript_test":false,"variants":["subscription_fullScreen_1_showContinue","subscription_modalDialog_7_showContinue_showSocial"],"environments":[{"name":"layout-service-browser"}],"control":"subscription_fullScreen_1_showContinue"}},"diversion_type":"CookieDiversion"}}
+          ;
+        for (var key in layoutConfig) {
+          if(layoutConfig.hasOwnProperty(key)) {
+            appConfig[key] = layoutConfig[key];
+          }
+        }
+        return appConfig;
+      }());
+    </script>
+    <script src="//www.groupon.com/layout/assets/perflibLoader-v2.4.1.js"></script>
+    <link rel="shortcut icon" href="//www.groupon.com/layout/assets/gig_application_layout-favicon-5414457d50.ico">
+    <script src="//www.groupon.com/layout/assets/gig_application_layout-v3.8.2-7803548e24.js"></script>
+      <script>
+        Groupon.Modules.SearchBar.init({"division":{"timezone":"Central Time (US &amp; Canada)","lng":-87.6243,"country":"USA","defaultLocale":"en","timezoneIdentifier":"America/Chicago","state":{"abbreviation":"IL"},"id":"chicago","name":"Chicago","areas":[],"lat":41.8795,"selectCurrentDivision":"selected"},"google_geo_url":"//mapproxy.groupon.com/maps/api/js"});
+      </script>
+    <link type="text/css" rel="stylesheet" href="//www.groupon.com/layout/assets/gig_application_layout-v3.8.2-542dd861f3.css">
+    <!--[if lte IE 7]>
+      <script src="//www.groupon.com/layout/js/lte-ie7.js"></script>
+    <![endif]-->
+
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link type="text/css" rel="stylesheet" href="http://localhost/gtGiaodien/assets/styles-1a3ad22217.css">
+
+
+  </head>
+  <body dir="ltr" class="prom-night ltr en_US en_XX shopping_cart_summary">
+    <div style="visibility: hidden; position: absolute;">
+      <script type="text/javascript">
+        var dataLayer =
+          
+      {}
+;
+    
+        dataLayer.dl_user_id = "49b3b154-a14e-11e3-9f07-00259095567a";
+    window.dataLayer = [dataLayer];
+      </script>
+    
+      <!--
+      <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-B76Z"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <script>
+        var placeGoogleTagManager = function(){
+          (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s) [0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-B76Z');
+        };
+        $(document).ready(placeGoogleTagManager);
+      </script>
+      -->
+    </div>
+    
+    <style type="text/css">
+      #tsCategory { position: absolute; }
+    </style>
+
+    <div id="global-container">
+
+        <script>
+          Groupon.subscription = new SubscriptionsUI();
+          Groupon.subscription.show_default_subscription_ui();
+        </script>
+
+      <div class="header-v2">
+        <header role="banner" data-bhw="Header" class="header" data-bhw-path="Header">
+          <div class="row">
+            <div class="two columns">
+              <a data-track="{&quot;event&quot;:&quot;click&quot;,&quot;t&quot;:&quot;logo_click&quot;}" data-bhw="Logo" class="logo icon-groupon" href="/" data-bhw-path="Header|Logo"></a>
+            </div>
+            <div class="ten columns ">
+              <div class="row">
+                  <div class="eight columns search-bar-wrapper">
+                    <form data-bhw="SearchBar" id="search-bar" class="search-bar free-text-search-enabled" data-bhw-path="Header|SearchBar">
+              <div class="rounded-input left active-search">
+                <label for="search" class="icon-magnifying-glass"></label>
+                <input type="search" autofocus="" data-bhw="FreeTextSearchField" id="search" placeholder="What are you looking for?" spellcheck="false" autocomplete="off" name="search" data-bhw-path="Header|SearchBar|FreeTextSearchField"><div data-bhw="SearchBarAutoComplete" class="search typeahead-response"></div>
+              </div>
+              <div data-error-availability="We are experiencing difficulty finding your location. Try again later." data-error-bad_location="We couldn't understand that location. Try another ZIP/Postal Code, neighborhood or address." data-error-generic="There was an error" class="rounded-input right">
+                <label for="location" class="icon-marker"></label>
+                <input type="text" data-bhw="LocationBarField" id="location" spellcheck="false" placeholder="Enter your location" autocomplete="off" name="location" data-bhw-path="Header|SearchBar|LocationBarField"><div data-bhw="SearchBarAutoComplete" class="location typeahead-response" style="width: auto;"></div>
+              </div>
+              <input type="submit" data-bhw="LocationBarFindDeals" class="btn-rounded btn-search" value="Go" name="submit_search">
+            </form>
+          
+          <script>
+            Groupon.Modules.SearchBar.SearchOverrides = [{"link":"/occasion/bestofgroupon","terms":["best","best of","best of groupon","top","top rated","best massage","best restaurant","best things to do","best gym","best facial","best nail salon","best car wash","best facial","best spas","best laser hair removal","best indian","best italian","best american","best bar","best laser hair removal"]},{"link":"/getaways","terms":["hotel","hotels"]},{"link":"/reserve","terms":["reservations","reserve"]},{"link":"http://www.grouponworks.com/get-featured","terms":["sell on groupon","advertise on groupon","run a groupon deal","get featured"]},{"link":"/groupon-promise","terms":["return policy","claim refund","request refund","refund","returns"]},{"link":"/customer_support","terms":["customer support","customer service"]},{"link":"https://merchants.groupon.com","terms":["merchant center"]},{"link":"https://breadcrumb.groupon.com/","terms":["breadcrumb","pos","point of sale"]},{"link":"https://breadcrumb.groupon.com/payments","terms":["payments"]},{"link":"https://grassroots.groupon.com/","terms":["charity","grassroots"]},{"link":"/coupons","terms":["coupons"]},{"link":"/giftcards","terms":["gift cards"]},{"link":"/articles/favin-the-maven","terms":["favin","favins faves","favin's faves","favin the maven","Beauty Expert","Resident Expert","Beauty Advice","Beauty Tips","Beauty Tricks"]}];
+          </script>
+          </div>
+                  <div class="four columns user-wrapper">
+                          <nav class="user-menu signed-in">
+                      <a class="user-name icon-arrow-down-large" href="/mygroupons">havietduc91</a>
+                              <ul class="my-stuff">
+                                  <h6>My Stuff</h6>
+                                  <li><a href="/users/49b3b154-a14e-11e3-9f07-00259095567a/groupons" id="user-groupons">My Groupons</a></li>
+                                  <li><a href="/users/49b3b154-a14e-11e3-9f07-00259095567a/account" id="user-account">My Account</a></li>
+                                  <li><a href="/users/49b3b154-a14e-11e3-9f07-00259095567a/profile/edit" id="user-profile">My Profile</a></li>
+                                      <li><a data-bhw="ReferFriends" class="refer-a-friend" href="/visitor_referral">
+                            Refer Friends, Get $10*
+                                      </a></li>
+                          <li><a id="sign-out" class="sign-out" href="/logout">Sign Out</a></li>
+                              </ul>
+                          </nav>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        
+        <nav role="navigation" class="primary-nav">
+          <div class="row">
+            <div class="twelve columns">
+              <ul>
+        
+                <li data-bhw="NavAllDeals" class="primary-nav-tab" id="all-tab" style="width: 97px;" data-bhw-path="NavAllDeals">
+                  <a href="/browse/chicago">All Deals</a>
+                </li><li class="p-nav-divider">|</li>
+
+                <li data-bhw="NavLocalDeals" class="primary-nav-tab" id="local-tab" style="width: 100px;" data-bhw-path="NavLocalDeals">
+                  <a href="/browse/chicago?context=local">Local</a>
+                </li><li class="p-nav-divider">|</li>
+
+                <li data-bhw="NavGoods" class="primary-nav-tab" id="goods-tab" style="width: 111px;" data-bhw-path="NavGoods">
+                  <a href="/goods">
+                    Goods
+                  </a>
+                </li><li class="p-nav-divider">|</li>
+        
+                <li data-bhw="NavGetaways" class="primary-nav-tab" id="getaways-tab" style="width: 135px;" data-bhw-path="NavGetaways">
+                  <a href="/getaways">
+                        Getaways
+          </a>
+                </li><li class="p-nav-divider">|</li>
+        
+                    <li data-bhw="NavReserve" class="primary-nav-tab reserve-tab" id="reserve-tab" style="width: 121px;" data-bhw-path="NavReserve">
+                      <a class="reserve G_event E-GlobalTopNavNH_GReserve" href="/reserve/chicago">Reserve</a>
+                    </li><li class="p-nav-divider">|</li>
+
+                  <li data-bhw="NavCoupons" class="primary-nav-tab" id="coupons-tab" style="width: 126px;" data-bhw-path="NavCoupons">
+                    <a href="/coupons">Freebies</a>
+                  </li><li class="p-nav-divider">|</li>
+
+                    <li data-bhw="NavOccasion" class="Occasion primary-nav-tab last" id="occasion-tab" style="width: 189px;" data-bhw-path="NavOccasion">
+              <a data-track="{&quot;event&quot;:&quot;click&quot;,&quot;t&quot;:&quot;occasion_tab_selected&quot;}" class="G_event E-GobalTopNavNH_GrouponOccasion showBestOfCampaignIcon icon-crown" href="/occasions">
+                Groupon's Best
+              </a>
+            </li>
+
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <nav class="subnav">
+          <nav style="display: none" class="subnav-flyout all-tab-flyout row">
+            <div data-bhw="CategoryNavigation" class="categories">
+              <div class="column">
+                <a href="/browse/chicago" id="all-deals" data-bhc="category:all-deals">
+                  <span class="title">All Deals</span>
+                  <span class="count">5007</span>
+                </a>
+        <a href="/browse/chicago?category=food-and-drink" id="food-and-drink" data-bhc="category:food-and-drink">
+                  <span class="title">Food &amp; Drink</span>
+                  <span class="count">413</span>
+                </a>
+        <a href="/browse/chicago?category=events-and-activities" id="events-and-activities" data-bhc="category:events-and-activities">
+                  <span class="title">Events &amp; Activities</span>
+                  <span class="count">744</span>
+                </a>
+        <a href="/browse/chicago?category=beauty-and-spas" id="beauty-and-spas" data-bhc="category:beauty-and-spas">
+                  <span class="title">Beauty &amp; Spas</span>
+                  <span class="count">992</span>
+                </a>
+        <a href="/browse/chicago?category=health-and-fitness" id="health-and-fitness" data-bhc="category:health-and-fitness">
+                  <span class="title">Health &amp; Fitness</span>
+                  <span class="count">823</span>
+                </a>
+        <a href="/browse/chicago?category=home-improvement" id="home-improvement" data-bhc="category:home-improvement">
+                  <span class="title">Home Services</span>
+                  <span class="count">192</span>
+                </a>
+      </div>
+      <div class="column">
+                <a href="/browse/chicago?category=local-services" id="local-services" data-bhc="category:local-services">
+                  <span class="title">Local Services</span>
+                  <span class="count">300</span>
+                </a>
+        <a href="/browse/chicago?category=automotive" id="automotive" data-bhc="category:automotive">
+                  <span class="title">Automotive</span>
+                  <span class="count">71</span>
+                </a>
+        <a href="/browse/chicago?category=shopping" id="shopping" data-bhc="category:shopping">
+                  <span class="title">Shopping</span>
+                  <span class="count">107</span>
+                </a>
+      </div>
+    </div>
+            <div class="megamind">
+              <div data-bhw="Megamind_Best of Groupon" class="widget">
+                <a href="https://www.groupon.com/occasion/bestofgroupon">
+                <span>
+                  <img data-bhc="asset:Best of Groupon" src="https://img.grouponcdn.com/deal/jhuX7u2chHHm2e26jxEmwS/BOG_Subnav-440x420">
+                </span>
+                </a>
+              </div>
+      <div data-bhw="Megamind_Events &amp; Activities" class="widget">
+                <a href="https://www.groupon.com/browse/chicago?category=events-and-activities">
+                <span>
+                  <img data-bhc="asset:Events &amp; Activities" src="https://img.grouponcdn.com/deal/xiXuesdTMpuDDyMidfkBnF/mu_local-eventsactivities_jpg-440x420">
+                </span>
+                </a>
+              </div>
+    </div>
+          </nav>
+  <nav style="display: none" class="subnav-flyout local-tab-flyout row">
+            <div data-bhw="CategoryNavigation" class="categories">
+              <div class="column">
+                <a href="/browse/chicago" id="all-deals" data-bhc="category:all-deals">
+                  <span class="title">All Deals</span>
+                  <span class="count">3091</span>
+                </a>
+        <a href="/browse/chicago?category=food-and-drink" id="food-and-drink" data-bhc="category:food-and-drink">
+                  <span class="title">Food &amp; Drink</span>
+                  <span class="count">414</span>
+                </a>
+        <a href="/browse/chicago?category=events-and-activities" id="events-and-activities" data-bhc="category:events-and-activities">
+                  <span class="title">Events &amp; Activities</span>
+                  <span class="count">744</span>
+                </a>
+        <a href="/browse/chicago?category=beauty-and-spas" id="beauty-and-spas" data-bhc="category:beauty-and-spas">
+                  <span class="title">Beauty &amp; Spas</span>
+                  <span class="count">992</span>
+                </a>
+        <a href="/browse/chicago?category=health-and-fitness" id="health-and-fitness" data-bhc="category:health-and-fitness">
+                  <span class="title">Health &amp; Fitness</span>
+                  <span class="count">823</span>
+                </a>
+        <a href="/browse/chicago?category=home-improvement" id="home-improvement" data-bhc="category:home-improvement">
+                  <span class="title">Home Services</span>
+                  <span class="count">192</span>
+                </a>
+      </div>
+      <div class="column">
+                <a href="/browse/chicago?category=local-services" id="local-services" data-bhc="category:local-services">
+                  <span class="title">Local Services</span>
+                  <span class="count">300</span>
+                </a>
+        <a href="/browse/chicago?category=automotive" id="automotive" data-bhc="category:automotive">
+                  <span class="title">Automotive</span>
+                  <span class="count">71</span>
+                </a>
+        <a href="/browse/chicago?category=shopping" id="shopping" data-bhc="category:shopping">
+                  <span class="title">Shopping</span>
+                  <span class="count">107</span>
+                </a>
+      </div>
+    </div>
+            <div class="megamind">
+              <div data-bhw="Megamind_Best of Groupon" class="widget">
+                <a href="https://www.groupon.com/occasion/bestofgroupon">
+                <span>
+                  <img data-bhc="asset:Best of Groupon" src="https://img.grouponcdn.com/deal/jhuX7u2chHHm2e26jxEmwS/BOG_Subnav-440x420">
+                </span>
+                </a>
+              </div>
+      <div data-bhw="Megamind_Events &amp; Activities" class="widget">
+                <a href="https://www.groupon.com/browse/chicago?category=events-and-activities">
+                <span>
+                  <img data-bhc="asset:Events &amp; Activities" src="https://img.grouponcdn.com/deal/xiXuesdTMpuDDyMidfkBnF/mu_local-eventsactivities_jpg-440x420">
+                </span>
+                </a>
+              </div>
+    </div>
+          </nav>
+  <nav style="display: none" class="subnav-flyout goods-tab-flyout row">
+            <div data-bhw="CategoryNavigation" class="categories">
+              <div class="column">
+                <a href="/goods?category=all" id="all-deals" data-bhc="category:all-deals">
+                  <span class="title">All Goods</span>
+                  <span class="count">1995</span>
+                </a>
+        <a href="/goods?category=apparel-and-accessories" id="apparel-and-accessories" data-bhc="category:apparel-and-accessories">
+                  <span class="title">Apparel</span>
+                  <span class="count">426</span>
+                </a>
+        <a href="/goods?category=automotive-goods" id="automotive-goods" data-bhc="category:automotive-goods">
+                  <span class="title">Auto</span>
+                  <span class="count">19</span>
+                </a>
+        <a href="/goods?category=baby-goods" id="baby-goods" data-bhc="category:baby-goods">
+                  <span class="title">Baby</span>
+                  <span class="count">21</span>
+                </a>
+        <a href="/goods?category=electronics-goods" id="electronics-goods" data-bhc="category:electronics-goods">
+                  <span class="title">Electronics</span>
+                  <span class="count">454</span>
+                </a>
+        <a href="/goods?category=entertainment-and-media" id="entertainment-and-media" data-bhc="category:entertainment-and-media">
+                  <span class="title">Entertainment</span>
+                  <span class="count">83</span>
+                </a>
+        <a href="/goods?category=food-and-drink-goods" id="food-and-drink-goods" data-bhc="category:food-and-drink-goods">
+                  <span class="title">Food &amp; Drink</span>
+                  <span class="count">53</span>
+                </a>
+      </div>
+      <div class="column">
+                <a href="/goods?category=health-and-beauty-goods" id="health-and-beauty-goods" data-bhc="category:health-and-beauty-goods">
+                  <span class="title">Health &amp; Beauty</span>
+                  <span class="count">238</span>
+                </a>
+        <a href="/goods?category=home-goods" id="home-goods" data-bhc="category:home-goods">
+                  <span class="title">Home</span>
+                  <span class="count">301</span>
+                </a>
+        <a href="/goods?category=jewelry" id="jewelry" data-bhc="category:jewelry">
+                  <span class="title">Jewelry &amp; Watches</span>
+                  <span class="count">200</span>
+                </a>
+        <a href="/goods?category=pets-goods" id="pets-goods" data-bhc="category:pets-goods">
+                  <span class="title">Pets</span>
+                  <span class="count">53</span>
+                </a>
+        <a href="/goods?category=sports-and-outdoors-goods" id="sports-and-outdoors-goods" data-bhc="category:sports-and-outdoors-goods">
+                  <span class="title">Sporting Goods</span>
+                  <span class="count">123</span>
+                </a>
+        <a href="/goods?category=tools-and-diy-goods" id="tools-and-diy-goods" data-bhc="category:tools-and-diy-goods">
+                  <span class="title">Tools</span>
+                  <span class="count">28</span>
+                </a>
+        <a href="/goods?category=toys" id="toys" data-bhc="category:toys">
+                  <span class="title">Toys</span>
+                  <span class="count">58</span>
+                </a>
+      </div>
+    </div>
+            <div class="megamind">
+              <div data-bhw="Megamind_Goods Clearance New" class="widget">
+                <a href="https://www.groupon.com/occasion/gg-clearance">
+                <span>
+                  <img data-bhc="asset:Goods Clearance New" src="https://img.grouponcdn.com/deal/81shbKMLCdVtDHBnSWB98G/clearance-subnav_goods-440x420">
+                </span>
+                </a>
+              </div>
+      <div data-bhw="Megamind_Goods Spring Fashions" class="widget">
+                <a href="https://www.groupon.com/occasion/gg-spring-fashion-trends">
+                <span>
+                  <img data-bhc="asset:Goods Spring Fashions" src="https://img.grouponcdn.com/deal/8BSTcmAGtAsLPo9CbUYm8M/goods_springfash_subnav-440x420">
+                </span>
+                </a>
+              </div>
+    </div>
+          </nav>
+  <nav style="display: none" class="subnav-flyout getaways-tab-flyout row">
+            <div data-bhw="CategoryNavigation" class="categories">
+              <div class="column">
+                <a data-bhc="category:All Destinations" href="/getaways#category/All+Destinations">
+                  <span class="title">All Destinations</span>
+                  <span class="count"></span>
+                </a>
+        <a data-bhc="category:USA &amp; Canada" href="/getaways#category/USA+and+Canada">
+                  <span class="title">USA &amp; Canada</span>
+                  <span class="count"></span>
+                </a>
+        <a data-bhc="category:Mexico, the Caribbean, &amp; Latin America" href="/getaways#category/Mexico,+the+Caribbean,+&amp;+Latin+America">
+                  <span class="title">Mexico, the Caribbean, &amp; Latin America</span>
+                  <span class="count"></span>
+                </a>
+        <a data-bhc="category:Europe, Asia, Africa, &amp; Oceania" href="/getaways#category/Europe,+Asia,+Africa,+&amp;+Oceania">
+                  <span class="title">Europe, Asia, Africa, &amp; Oceania</span>
+                  <span class="count"></span>
+                </a>
+      </div>
+    </div>
+            <div class="megamind">
+              <div data-bhw="Megamind_getaways-educational" class="widget">
+                <a href="/getaways">
+                <span>
+                  <img data-bhc="asset:getaways-educational" src="//www.groupon.com/layout/assets/SearchSubNav@2x-44cc8152b2.png">
+                </span>
+                </a>
+              </div>
+      <div data-bhw="Megamind_Getaways_spring_break" class="widget">
+                <a href="https://www.groupon.com/occasion/ga-spring-break">
+                <span>
+                  <img data-bhc="asset:Getaways_spring_break" src="https://img.grouponcdn.com/deal/s6kf6A5eYtLJ9vVc1wCG6x/spring_break_getaways_Subnav-440x420">
+                </span>
+                </a>
+              </div>
+      <div data-bhw="Megamind_ga-new_getaways" class="widget">
+                <a href="https://www.groupon.com/occasion/hot-travel-deals">
+                <span>
+                  <img data-bhc="asset:ga-new_getaways" src="https://img.grouponcdn.com/deal/ncDBNDfjS8Kx5XVXCgfMPP/getaways_newdeals-440x420">
+                </span>
+                </a>
+              </div>
+    </div>
+          </nav>
+  <nav style="display: none" class="subnav-flyout reserve-tab-flyout row">
+            <div data-bhw="CategoryNavigation" class="categories">
+              <div class="column">
+                <a href="/reserve/new-york" id="new-york" data-bhc="category:new-york">
+                  <span class="title">New York City</span>
+                  <span class="count">348</span>
+                </a>
+        <a href="/reserve/north-jersey" id="north-jersey" data-bhc="category:north-jersey">
+                  <span class="title">North Jersey</span>
+                  <span class="count">28</span>
+                </a>
+        <a href="/reserve/long-island" id="long-island" data-bhc="category:long-island">
+                  <span class="title">Long Island</span>
+                  <span class="count">31</span>
+                </a>
+        <a href="/reserve/westchester-county" id="westchester-county" data-bhc="category:westchester-county">
+                  <span class="title">Westchester</span>
+                  <span class="count">23</span>
+                </a>
+        <a href="/reserve/chicago" id="chicago" data-bhc="category:chicago">
+                  <span class="title">Chicago</span>
+                  <span class="count">80</span>
+                </a>
+        <a href="/reserve/san-francisco" id="san-francisco" data-bhc="category:san-francisco">
+                  <span class="title">San Francisco</span>
+                  <span class="count">37</span>
+                </a>
+        <a href="/reserve/los-angeles" id="los-angeles" data-bhc="category:los-angeles">
+                  <span class="title">Los Angeles</span>
+                  <span class="count">61</span>
+                </a>
+      </div>
+      <div class="column">
+                <a href="/reserve/washington-dc" id="washington-dc" data-bhc="category:washington-dc">
+                  <span class="title">Washington DC</span>
+                  <span class="count">47</span>
+                </a>
+        <a href="/reserve/philadelphia" id="philadelphia" data-bhc="category:philadelphia">
+                  <span class="title">Philadelphia</span>
+                  <span class="count">24</span>
+                </a>
+        <a href="/reserve/atlanta" id="atlanta" data-bhc="category:atlanta">
+                  <span class="title">Atlanta</span>
+                  <span class="count">20</span>
+                </a>
+        <a href="/reserve/boston" id="boston" data-bhc="category:boston">
+                  <span class="title">Boston</span>
+                  <span class="count">19</span>
+                </a>
+        <a href="/reserve/miami" id="miami" data-bhc="category:miami">
+                  <span class="title">Miami</span>
+                  <span class="count">47</span>
+                </a>
+        <a href="/reserve/denver" id="denver" data-bhc="category:denver">
+                  <span class="title">Denver</span>
+                  <span class="count">18</span>
+                </a>
+      </div>
+    </div>
+            <div class="megamind">
+              <div data-bhw="Megamind_Reserve2 B" class="widget">
+                <a href="https://www.groupon.com/reserve">
+                <span>
+                  <img data-bhc="asset:Reserve2" src="https://img.grouponcdn.com/deal/qJFgdFZbH9DYHwQZ4eAVLi/mu_reserve-value02_jpg-440x420">
+                </span>
+                </a>
+              </div>
+      <div data-bhw="Megamind_Reserve2 A" class="widget">
+                <a href="https://www.groupon.com/reserve">
+                <span>
+                  <img data-bhc="asset:Reserve2" src="https://img.grouponcdn.com/deal/jZ3vMst3vAKnZVnr7SFdVX/mu_reserve-value01_jpg-440x420">
+                </span>
+                </a>
+              </div>
+    </div>
+          </nav>
+  <nav style="display: none" class="subnav-flyout coupons-tab-flyout row">
+            <div data-bhw="CategoryNavigation" class="categories">
+              <div class="column">
+                <a data-bhc="category:All Stores" href="/coupons/stores">
+                  <span class="title">All Stores</span>
+                  <span class="count"></span>
+                </a>
+        <a data-bhc="category:Target" href="/coupons/stores/target.com">
+                  <span class="title">Target</span>
+                  <span class="count"></span>
+                </a>
+        <a data-bhc="category:Toys R Us" href="/coupons/stores/toysrus.com">
+                  <span class="title">Toys R Us</span>
+                  <span class="count"></span>
+                </a>
+        <a data-bhc="category:Sephora" href="/coupons/stores/sephora.com">
+                  <span class="title">Sephora</span>
+                  <span class="count"></span>
+                </a>
+        <a data-bhc="category:Nordstrom" href="/coupons/stores/nordstrom.com">
+                  <span class="title">Nordstrom</span>
+                  <span class="count"></span>
+                </a>
+        <a data-bhc="category:Best Buy" href="/coupons/stores/bestbuy.com">
+                  <span class="title">Best Buy</span>
+                  <span class="count"></span>
+                </a>
+      </div>
+    </div>
+            <div class="megamind">
+              <div data-bhw="Megamind_DefaultFallback" class="widget">
+                <a href="/coupons">
+                <span>
+                  <img data-bhc="asset:Today's Best" src="//img.grouponcdn.com/deal/45m9Y28QFGAVovMwa1cxga/todays-best-col2-440x420">
+                </span>
+                </a>
+              </div>
+      <div data-bhw="Megamind_DefaultFallback" class="widget">
+                <a href="/coupons/exclusives">
+                <span>
+                  <img data-bhc="asset:Groupon Gift Cards" src="//img.grouponcdn.com/deal/b6yfUwzHwusp71HawEsp3p/g-exclusives-col3-440x420">
+                </span>
+                </a>
+              </div>
+      <div data-bhw="Megamind_DefaultFallback" class="widget">
+                <a href="/coupons">
+                <span>
+                  <img data-bhc="asset:About Groupon Freebies" src="//img.grouponcdn.com/deal/kKbhTxfz3Bnb8YfNNvcNZg/freebies-text-col4-440x420">
+                </span>
+                </a>
+              </div>
+    </div>
+          </nav>
+</nav>
+        
+      </div>
+
+      <div class="row" id="main">
+  <div style="display:none" class="notification client error"></div>
+    <section class="twelve columns">
+        <div data-bhd="{&quot;uuid&quot;:&quot;&quot;}" data-bhw="CartSummary" class="module" data-bhw-path="CartSummary">
+            <div class="module-body" id="cart_items_container">
+          <div id="no_items">
+            <header>
+                <h2>Uh oh... Your cart is empty!</h2>
+            </header>
+            <div>
+                <h5>Your cart is feeling pretty lonely.</h5>
+                <p>What are you waiting for? Start shopping electronics, jewelry, apparel and other great offers from <a data-bhw="EmptyGoods" href="/goods" title="Groupon Goods" data-bhw-path="CartSummary|EmptyGoods">Groupon Goods</a>.</p>
+            </div>
+            <section id="recommendation" style="display: block;">  <div id="featured-deals"><section data-bhw-path="CartSummary|UpSell" data-bhd="{&quot;megamind_request_id&quot;:&quot;201402272327801090577&quot;,&quot;widget_type&quot;:&quot;TopDeals&quot;}" data-bhw="UpSell" class="pad-row">
+  <div class="section-head">
+      <h2>Here are some deals to get you started...</h2>
+  </div>
+  <div class="block-grid three-up" id="recommendation_deals">
+  <figure data-bhc="deal:gg-delray-6pc-600tc-sheet-set" class="deal-card" data-bhc-path="CartSummary|UpSell|deal:gg-delray-6pc-600tc-sheet-set">
+  <a href="http://www.groupon.com/deals/gg-delray-6pc-600tc-sheet-set">
+    <img src="https://img.grouponcdn.com/deal/fR3feq6wcAuK1ovDNwUW/Jq-960x582/v1/t440x300.jpg">
+    <figcaption>
+      <p class="deal-title should-truncate">Delray 6-Piece Sheet Set</p>
+      <p class="quantity-sold">80+ sold</p>
+
+      <p class="deal-price">
+        <s class="original-price">$120.00</s> $39.99
+      </p>
+    </figcaption>
+  </a>
+</figure>
+<figure data-bhc="deal:gg-hp-110-194-windows-8-desktop-pc-with-8gb-ram-h6u03aa-1" class="deal-card" data-bhc-path="CartSummary|UpSell|deal:gg-hp-110-194-windows-8-desktop-pc-with-8gb-ram-h6u03aa-1">
+  <a href="http://www.groupon.com/deals/gg-hp-110-194-windows-8-desktop-pc-with-8gb-ram-h6u03aa-1">
+    <img src="https://img.grouponcdn.com/deal/eaaMwz4wvf8BEyAw5yfq/pe-960x582/v1/t440x300.jpg">
+    <figcaption>
+      <p class="deal-title should-truncate">HP 110-194 Windows 8 Desktop PC</p>
+      <p class="quantity-sold">10+ sold</p>
+
+      <p class="deal-price">
+        <s class="original-price">$499.00</s> $289.99
+      </p>
+    </figcaption>
+  </a>
+</figure>
+<figure data-bhc="deal:gg-marika-womens-activewear-jackets" class="deal-card" data-bhc-path="CartSummary|UpSell|deal:gg-marika-womens-activewear-jackets">
+  <a href="http://www.groupon.com/deals/gg-marika-womens-activewear-jackets">
+    <img src="https://img.grouponcdn.com/deal/97Dd4w3wFuGpA7WMbpDy/fD-1800x1091/v1/t440x300.jpg">
+    <figcaption>
+      <p class="deal-title should-truncate">Marika Women's Active Jackets</p>
+      <p class="quantity-sold">160+ sold</p>
+
+      <p class="deal-price">
+        <s class="original-price">$75.00</s> $26.99
+      </p>
+    </figcaption>
+  </a>
+</figure>
+</div>
+</section>
+</div>
+</section>
+            <a data-bhw="EmptyContinue" title="Continue Shopping" href="/goods" class="btn-secondary continue" data-bhw-path="CartSummary|EmptyContinue">
+                Continue Shopping
+            </a>     
+          </div>
+            </div>
+        </div>  
+    </section>
+</div>
+<div class="tooltip" id="groupon-bucks-tooltip">
+  <div class="indicator"></div>
+  <div class="tooltip-content">Get 5% Back in Groupon Bucks</div>
+</div>
+<section class="info">
+  <div class="row">
+    <div class="spot paymentFaqs">
+      <h4>Payment FAQs</h4>      
+      <dl class="accordion">
+        <dt data-bhw="FaqBuy" class="closed" data-bhw-path="FaqBuy">What happens after I buy?</dt>
+        <dd>
+          <p>
+            Within 24 hours you'll receive an email receipt confirming that your purchase has been processed. During times of high site traffic, please allow the full 24 hours for your receipt to arrive through email. That email will explain how to print your Groupon, and your Groupon will include everything you need to know to redeem it.
+          </p>
+        </dd>
+        <dt data-bhw="FaqGift" class="closed" data-bhw-path="FaqGift">What if I buy as a gift?</dt>
+        <dd>
+          <p>
+            When you buy a Groupon as a gift and choose to email it, an email will be sent to the recipient as soon as your card is charged, with all the instructions they need to claim their gift with a single click. If you chose to print your gift, you'll be able to do that on 'My Gifts' once your card has been charged.
+          </p>
+        </dd>
+        <dt data-bhw="FaqPurchase" class="closed" data-bhw-path="FaqPurchase">Can I change/cancel my purchase?</dt>
+        <dd>
+          <p>
+            Yes, you can modify your purchase up until the deal closes, as long as you haven't printed your Groupons - once you print, you can no longer change your purchase. You'll see all your purchases on 'My Groupons', with a link to 'Change my purchase' where appropriate.
+          </p>
+          <p>
+            For Groupon Goods, you can edit or cancel your order for only up to 2 hours after making your purchase. Once that 2 hour window closes, your order will begin to prepare for the pilgrimage to its new home!
+          </p>
+        </dd>
+        <dt data-bhw="FaqSafe" class="closed" data-bhw-path="FaqSafe">Is this safe?</dt>
+        <dd>
+          <p>
+            Yes! Our security program contains administrative, technical, and physical controls that are designed to reasonably safeguard your information; for example, we use industry-standard encryption technology to secure your personal and payment information.
+            You can read more 
+            <a data-bhw="CartPaymentSafe" href="/privacy">
+              here
+            </a>
+            .
+          </p>
+        </dd>
+      </dl>
+    </div>
+    <div class="spot helpful_links">
+      <h4>Helpful Links</h4>
+      <ul>
+        <li aria-hidden="true" class="fs1"><a data-bhw="HelpCenter" href="/helpcenter" title="Groupon Help Center" data-bhw-path="HelpCenter">Groupon Help Center</a></li>
+        <li aria-hidden="true" class="fs1"><a data-bhw="HelpShipping" href="/customer_support" title="Shipping Policy" data-bhw-path="HelpShipping">Shipping Policy</a></li>
+        <li aria-hidden="true" class="fs1"><a data-bhw="HelpPrivacy" href="/privacy" title="Privacy Policy" data-bhw-path="HelpPrivacy">Privacy Policy</a></li>
+      </ul>
+    </div>
+    <div class="spot groupon_promise">
+      <h4>The Groupon Promise</h4>
+      <p>
+        We're confident in the businesses we feature on Groupon and back them with the  
+        <a data-bhw="Promise" href="/groupon-promise" title="Groupon Promise" data-bhw-path="Promise">Groupon Promise</a>.
+      </p>
+      <img alt="Groupon Promise" src="/cart/assets/groupon-promise-bc41dcad4d.png">
+    </div>
+    <div class="spot shipping_returns">
+      <h4>FREE Shipping &amp; Returns!</h4>
+      <p>
+        Now you can enjoy Free Shipping on purchases of $19.99 or more and Free Returns.
+        <a data-bhw="Returns" href="/pages/goods-faq#1" title="Learn more" data-bhw-path="Returns">Learn more</a>
+      </p>
+    </div>
+  </div>
+</section><script type="text/javascript">
+$(function(){
+  Summary = window.Summary || {}
+  Summary.lineItems = [];
+  Summary.numberOfItems = {"count":0,"singular":false};
+  Summary.bCookie = "8291a593-5a88-520c-52a4-d25ef51d517e";
+  Summary.mustaches = {"summary_line_item":"&lt;td class=\"item_details\"&gt;\n  &lt;img src=\"{{item.image}}\" alt=\"{{deal.shortAnnouncementTitle}}\" /&gt;\n&lt;/td&gt;\n&lt;td class=\"title\"&gt;&lt;h3&gt;&lt;a href=\"{{deal.dealUrl}}\"&gt;{{item.title}}&lt;/a&gt;&lt;/h3&gt;\n  {{#item.showBasicsGrouponBucks}}\n    &lt;div class='icon-bucks'&gt;&lt;/div&gt;\n    &lt;div class='basics-groupon-bucks'&gt;\n      {{#translate}}.item.groupon_bucks{{/translate}}\n      &lt;a href=\"/faq#faqs:category-74\" data-bhw=\"BasicsGrouponBucksFaq\"&gt;See Details&lt;/a&gt;\n    &lt;/div&gt;\n  {{/item.showBasicsGrouponBucks}}\n  {{#item.error}}\n    &lt;br/&gt;&lt;div class=\"notification error\"&gt;{{item.error}}&lt;/div&gt;\n  {{/item.error}}\n&lt;/td&gt;\n&lt;td class=\"price\"&gt;{{item.unitPriceFormatted}}&lt;/td&gt;\n&lt;td class=\"x\"&gt;{{#translate}}.cart_header.x{{/translate}}&lt;/td&gt;\n&lt;td class=\"quantity\"&gt;\n  &lt;div class=\"inputAndRemove\"&gt;\n    &lt;select name=\"quantity\" disabled=\"disabled\"&gt;\n      {{#item.quantityRange}}\n      &lt;option value=\"{{amount}}\"{{#selected}} selected=\"selected\"{{/selected}}&gt;{{amount}}&lt;/option&gt;\n      {{/item.quantityRange}}\n    &lt;/select&gt;\n    &lt;a title=\"Remove\" class=\"remove\" href=\"#\" data-bhw=\"CartRemove\"&gt;Remove&lt;/a&gt;\n    &lt;span class=\"loader removing\" style=\"display:none\"&gt;Removing...&lt;/span&gt;\n  &lt;/div&gt;\n  &lt;div class=\"loader updating\" style=\"visibility:hidden\"&gt;Updating...&lt;/div&gt;\n&lt;/td&gt;\n&lt;td class=\"subtotal\"&gt;{{item.subtotalFormatted}}&lt;/td&gt;\n","summary_subtotal":"&lt;td class=\"label\" colspan=\"5\"&gt;{{#translate}}.subtotal{{/translate}}&lt;/td&gt;\n&lt;td class=\"subtotal\"&gt;{{subtotal}}&lt;/td&gt;","summary_total_items":"{{#translate}}.total_items.you_have{{/translate}}\n&lt;span class=\"amount\"&gt;{{numberOfItems.count}}&lt;/span&gt;\n{{#numberOfItems.singular}}\n{{#translate}}.total_items.item_in_your_cart{{/translate}}\n{{/numberOfItems.singular}}\n{{^numberOfItems.singular}}\n{{#translate}}.total_items.items_in_your_cart{{/translate}}\n{{/numberOfItems.singular}}\n","summary_warning":"{{^warning}}\n  &lt;section&gt;\n    &lt;div class=\"notification warning\"&gt;\n      &lt;a class=\"remove\" title=\"{{#translate}}.hide{{/translate}}\" href=\"javascript:void(0);\" data-bhw=\"Warning\"&gt;{{#translate}}.hide{{/translate}}&lt;/a&gt; \n      &lt;span class=\"message\"&gt;{{#translate}}.warning{{/translate}}&lt;/span&gt;\n    &lt;/div&gt;\n  &lt;/section&gt;\n{{/warning}}\n","summary_no_items":"&lt;div id=\"no_items\"&gt;\n\t&lt;header&gt;\n\t\t&lt;h2&gt;{{#translate}}.no_items.empty{{/translate}}&lt;/h2&gt;\n\t&lt;/header&gt;\n\t&lt;div&gt;\n\t\t&lt;h5&gt;{{#translate}}.no_items.lonely{{/translate}}&lt;/h5&gt;\n\t\t&lt;p&gt;{{#translate}}.no_items.what_are_you_waiting_for{{/translate}} &lt;a title=\"{{#translate}}.no_items.groupon_goods{{/translate}}\" href=\"/goods\" data-bhw=\"EmptyGoods\"&gt;{{#translate}}.no_items.groupon_goods{{/translate}}&lt;/a&gt;.&lt;/p&gt;\n\t&lt;/div&gt;\n\t&lt;section id=\"recommendation\"&gt;\n\t\t{{&gt; scenario_recommendation}}\n\t&lt;/section&gt;\n\t&lt;a class=\"btn-secondary continue\" href=\"/goods\" title=\"{{#translate}}.actions.continue_shopping{{/translate}}\" data-bhw=\"EmptyContinue\"&gt;\n\t\t{{#translate}}.actions.continue_shopping{{/translate}}\n\t&lt;/a&gt;     \n&lt;/div&gt;\n","scenario_recommendation":"{{#scenario_widget}}\n  &lt;div id=\"featured-deals\"&gt;\n    {{&gt; scenario_deals_pack}}\n  &lt;/div&gt;\n{{/scenario_widget}}\n","scenario_deals_pack":"&lt;section class=\"pad-row\" data-bhw=\"{{bhw}}\" data-bhd=\"{{bhd}}\" data-bhw-path=\"CartSummary|{{bhw}}\"&gt;\n  &lt;div class=\"section-head\"&gt;\n    {{^viewAll}}\n      &lt;h2&gt;{{name}}&lt;/h2&gt;\n    {{/viewAll}}\n    {{#viewAll}}\n      &lt;a href=\"{{viewAll}}\" data-bhw=\"{{ bhw }}Title\"&gt;&lt;h2&gt;{{name}}&lt;/h2&gt;&lt;/a&gt;\n      &lt;a href=\"{{viewAll}}\" data-bhw=\"{{ bhw }}ViewAll\"&gt;{{#translate}}modules.home.widgets.view_all{{/translate}}&lt;/a&gt;\n    {{/viewAll}}\n  &lt;/div&gt;\n  &lt;div id=\"recommendation_deals\" class=\"block-grid {{cssClass}}\"&gt;\n    {{#deals}}{{&gt; scenario_deal}}{{/deals}}\n  &lt;/div&gt;\n&lt;/section&gt;\n","scenario_deal":"&lt;figure class=\"deal-card\" data-bhc=\"{{bhc}}\"&gt;\n  &lt;a href=\"{{dealUrl}}\"&gt;\n    &lt;img src=\"{{images.sidebar}}\"&gt;\n    &lt;figcaption&gt;\n      &lt;p class=\"deal-title should-truncate\"&gt;{{title}}&lt;/p&gt;\n      {{# showQuantity }}&lt;p class=\"quantity-sold\"&gt;{{ soldMessage }} sold&lt;/p&gt;{{/ showQuantity }}\n      {{# showBasicsGrouponBucks }}\n        &lt;div class=\"groupon-bucks-container tooltip-trigger\" data-tooltip-id=\"groupon-bucks-tooltip\" data-position=\"top\" &gt;\n          &lt;div class='icon-bucks'&gt;&lt;/div&gt;\n          &lt;p class=\"basics-groupon-bucks\"&gt;{{#translate}}.groupon_bucks{{/translate}}&lt;/p&gt;\n        &lt;/div&gt;\n      {{/ showBasicsGrouponBucks }}\n\n      &lt;p class=\"deal-price\"&gt;\n        &lt;s class=\"original-price\"&gt;{{value}}&lt;/s&gt; {{price}}\n      &lt;/p&gt;\n    &lt;/figcaption&gt;\n  &lt;/a&gt;\n&lt;/figure&gt;\n"};
+  Summary._csrf = "05548090a14b11e3ac1679e68a65d968";
+  Summary.scenario_widget = {"name":"Here are some deals to get you started...","deals":[{"bhc":"deal:gg-delray-6pc-600tc-sheet-set","dealUrl":"http://www.groupon.com/deals/gg-delray-6pc-600tc-sheet-set","images":{"sidebar":"https://img.grouponcdn.com/deal/fR3feq6wcAuK1ovDNwUW/Jq-960x582/v1/t440x300.jpg","big":"https://img.grouponcdn.com/deal/fR3feq6wcAuK1ovDNwUW/Jq-960x582/v1/c954x610.jpg"},"location":"Online Deal","merchantName":"Delray 6-Piece 600TC Sheet Set","price":"$39.99","title":"Delray 6-Piece Sheet Set","value":"$120.00","soldMessage":"80+","showQuantity":true,"showBasicsGrouponBucks":false},{"bhc":"deal:gg-hp-110-194-windows-8-desktop-pc-with-8gb-ram-h6u03aa-1","dealUrl":"http://www.groupon.com/deals/gg-hp-110-194-windows-8-desktop-pc-with-8gb-ram-h6u03aa-1","images":{"sidebar":"https://img.grouponcdn.com/deal/eaaMwz4wvf8BEyAw5yfq/pe-960x582/v1/t440x300.jpg","big":"https://img.grouponcdn.com/deal/eaaMwz4wvf8BEyAw5yfq/pe-960x582/v1/c954x610.jpg"},"location":"Online Deal","merchantName":"HP 110-194 Windows 8 Desktop PC with 8GB RAM","price":"$289.99","title":"HP 110-194 Windows 8 Desktop PC","value":"$499.00","soldMessage":"10+","showQuantity":true,"showBasicsGrouponBucks":false},{"bhc":"deal:gg-marika-womens-activewear-jackets","dealUrl":"http://www.groupon.com/deals/gg-marika-womens-activewear-jackets","images":{"sidebar":"https://img.grouponcdn.com/deal/97Dd4w3wFuGpA7WMbpDy/fD-1800x1091/v1/t440x300.jpg","big":"https://img.grouponcdn.com/deal/97Dd4w3wFuGpA7WMbpDy/fD-1800x1091/v1/c954x610.jpg"},"location":"Online Deal","merchantName":"Marika Women's Activewear Jackets","price":"$26.99","title":"Marika Women's Active Jackets","value":"$75.00","soldMessage":"160+","showQuantity":true,"showBasicsGrouponBucks":false}],"cssClass":"three-up","bhw":"UpSell","bhd":"{\"megamind_request_id\":\"201402272325301091221\",\"widget_type\":\"TopDeals\"}"};
+  Summary.init();
+});
+</script>
+
+<script src="/cart/js/locale.js" type="text/javascript"></script>
+<script src="/cart/assets/main-for-remote-layout-51e544df74.js" type="text/javascript"></script>
+
+        <footer class="footer-i18n">
+    <div class="row">
+        <div class="columns nine footer-i18n-payload">
+            <div class="row footer-i18n-sitemap footer-i18n-flexLinks">
+                    <div class="columns three footer-links">
+                        <h6 class="footer-link-headline">Company</h6>
+                            <a title="" href="/about">About Groupon</a>
+                            <a title="" href="http://jobs.groupon.com">Jobs</a>
+                            <a title="" href="/blog">Blog</a>
+                            <a title="" href="/press">Press</a>
+                            <a title="" href="http://investor.groupon.com">Investor Relations</a>
+                    </div>
+                    <div class="columns three footer-links">
+                        <h6 class="footer-link-headline">Work with Groupon</h6>
+                            <a title="" href="https://www.grouponworks.com/get-featured/">Run a Groupon Deal</a>
+                            <a title="" href="http://www.grouponworks.com/merchant-solutions/payments">Accept Groupon Payments</a>
+                            <a title="" href="/pages/api">Developers / API</a>
+                            <a title="" href="http://www.grouponaffiliate.com/">Affiliate Program</a>
+                            <a title="" href="http://grassroots.groupon.com">Help Your Community</a>
+                    </div>
+                    <div class="columns three footer-links">
+                        <h6 class="footer-link-headline">More</h6>
+                            <a title="" href="/customer_support">Customer Support</a>
+                            <a title="" href="/faq">FAQ</a>
+                            <a title="" href="/coupons">Coupons</a>
+                            <a title="" href="/articles/favin-the-maven">Favin the Maven</a>
+                    </div>
+
+                <div class="columns three">
+            <h6 class="footer-link-headline">Follow Us</h6>
+          <div class="follow-us">
+            <a class="icon-twitter" title="Twitter" href="http://twitter.com/groupon"></a>
+            <a class="icon-facebook" title="Facebook" href="http://facebook.com/groupon"></a>
+            <a class="icon-feed" title="RSS Feed" href="http://feeds.feedburner.com/groupon"></a>
+            <a class="icon-email" title="Subscribe via Email" href="/subscribe"></a>
+          </div>
+                </div>
+            </div>
+  
+            <div class="row">
+                <div class="columns twelve footer-i18n-seo">
+  
+            <h6>Unbeatable Deals for Local&nbsp;Adventures</h6>
+          <p>
+            Groupon is an easy way to get huge discounts while discovering fun activities in your city. Our daily local deals consist of <a href="/local/restaurants">restaurants</a>, <a href="/local/beauty-and-spas">spas</a>, <a href="/local/things-to-do">things to do</a>, <a href="/local/nightlife">nightlife</a>, <a href="/local/massage">massages</a>, <a href="/local/hair-salons">salons</a>, <a href="/getaways">hotels</a>, and a whole lot more, in hundreds of cities across the&nbsp;world.
+          </p>
+
+                    <div class="footer-copyright">
+                        &copy; 2014 Groupon, Inc.
+              All Rights Reserved.
+                        <span class="footer-copyright-links">
+                                <a title="" href="/privacy">Privacy Policy</a>
+                                <a title="" href="/terms">Terms of Use</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+  
+        <div class="columns three footer-i18n-promos">
+          <a title="Groupon for mobile devices" class="footer-i18n-promo footer-i18n-promo-mobile" href="/mobile?utm_source=gp&amp;utm_medium=footer&amp;utm_campaign=mlusers#">
+              <h6 class="footer-cta-headline">Get the Groupon Mobile App <i class="icon-arrow-right-large"></i></h6>
+            </a>
+        <a title="Groupon Works" class="footer-i18n-promo footer-i18n-promo-works" href="http://www.grouponworks.com">
+          <span class="icon-groupon footer-i18n-works-logo">Works</span>
+          <h6 class="footer-cta-headline">Get New Customers and Grow Your Business <i class="icon-arrow-right-large"></i></h6>
+            </a>
+        </div>
+  
+    </div>
+  
+  </footer>
+
+      <div class="touch-footer hide">
+  <a href="" class="row">
+    Go to mobile site
+  </a>
+</div>
+    </div>
+    
+  
+
+</body></html>
